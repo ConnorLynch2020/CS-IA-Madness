@@ -38,6 +38,51 @@ public class BracketExample extends javax.swing.JFrame {
         jComboBox9 = new javax.swing.JComboBox<>();
         jComboBox10 = new javax.swing.JComboBox<>();
         jComboBox11 = new javax.swing.JComboBox<>();
+        jComboBox12 = new javax.swing.JComboBox<>();
+        jComboBox13 = new javax.swing.JComboBox<>();
+        jComboBox14 = new javax.swing.JComboBox<>();
+        jComboBox16 = new javax.swing.JComboBox<>();
+        jComboBox17 = new javax.swing.JComboBox<>();
+        jComboBox15 = new javax.swing.JComboBox<>();
+        jComboBox18 = new javax.swing.JComboBox<>();
+        jComboBox19 = new javax.swing.JComboBox<>();
+        jComboBox20 = new javax.swing.JComboBox<>();
+        jComboBox21 = new javax.swing.JComboBox<>();
+        jComboBox22 = new javax.swing.JComboBox<>();
+        jComboBox23 = new javax.swing.JComboBox<>();
+        jComboBox24 = new javax.swing.JComboBox<>();
+        jComboBox25 = new javax.swing.JComboBox<>();
+        jComboBox26 = new javax.swing.JComboBox<>();
+        jComboBox27 = new javax.swing.JComboBox<>();
+        jComboBox28 = new javax.swing.JComboBox<>();
+        jComboBox29 = new javax.swing.JComboBox<>();
+        jComboBox30 = new javax.swing.JComboBox<>();
+        jComboBox31 = new javax.swing.JComboBox<>();
+        jComboBox32 = new javax.swing.JComboBox<>();
+        jComboBox33 = new javax.swing.JComboBox<>();
+        jComboBox34 = new javax.swing.JComboBox<>();
+        jComboBox35 = new javax.swing.JComboBox<>();
+        jComboBox36 = new javax.swing.JComboBox<>();
+        jComboBox37 = new javax.swing.JComboBox<>();
+        jComboBox38 = new javax.swing.JComboBox<>();
+        jComboBox39 = new javax.swing.JComboBox<>();
+        jComboBox40 = new javax.swing.JComboBox<>();
+        jComboBox41 = new javax.swing.JComboBox<>();
+        jComboBox42 = new javax.swing.JComboBox<>();
+        jComboBox43 = new javax.swing.JComboBox<>();
+        jComboBox44 = new javax.swing.JComboBox<>();
+        jComboBox45 = new javax.swing.JComboBox<>();
+        jComboBox46 = new javax.swing.JComboBox<>();
+        jComboBox47 = new javax.swing.JComboBox<>();
+        jComboBox48 = new javax.swing.JComboBox<>();
+        jComboBox49 = new javax.swing.JComboBox<>();
+        jComboBox50 = new javax.swing.JComboBox<>();
+        jComboBox51 = new javax.swing.JComboBox<>();
+        jComboBox52 = new javax.swing.JComboBox<>();
+        jComboBox53 = new javax.swing.JComboBox<>();
+        jComboBox54 = new javax.swing.JComboBox<>();
+        jComboBox55 = new javax.swing.JComboBox<>();
+        jComboBox56 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -48,7 +93,7 @@ public class BracketExample extends javax.swing.JFrame {
                 jComboBox1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 26, 64, 28));
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 50, 80, 28));
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
@@ -56,7 +101,7 @@ public class BracketExample extends javax.swing.JFrame {
                 jComboBox2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 164, 64, 28));
+        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 170, 80, 28));
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox3.addActionListener(new java.awt.event.ActionListener() {
@@ -64,7 +109,7 @@ public class BracketExample extends javax.swing.JFrame {
                 jComboBox3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 72, 64, 28));
+        getContentPane().add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 90, 80, 28));
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox4.addActionListener(new java.awt.event.ActionListener() {
@@ -72,7 +117,7 @@ public class BracketExample extends javax.swing.JFrame {
                 jComboBox4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 118, 64, 28));
+        getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 130, 80, 28));
 
         jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox5.addActionListener(new java.awt.event.ActionListener() {
@@ -80,7 +125,7 @@ public class BracketExample extends javax.swing.JFrame {
                 jComboBox5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 256, 64, 28));
+        getContentPane().add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 250, 80, 28));
 
         jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox6.addActionListener(new java.awt.event.ActionListener() {
@@ -88,7 +133,7 @@ public class BracketExample extends javax.swing.JFrame {
                 jComboBox6ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 210, 64, 28));
+        getContentPane().add(jComboBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 210, 80, 28));
 
         jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox7.addActionListener(new java.awt.event.ActionListener() {
@@ -96,7 +141,7 @@ public class BracketExample extends javax.swing.JFrame {
                 jComboBox7ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 302, 64, 28));
+        getContentPane().add(jComboBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 290, 80, 28));
 
         jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox8.addActionListener(new java.awt.event.ActionListener() {
@@ -104,7 +149,7 @@ public class BracketExample extends javax.swing.JFrame {
                 jComboBox8ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 348, 64, 28));
+        getContentPane().add(jComboBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 330, 80, 28));
 
         jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox9.addActionListener(new java.awt.event.ActionListener() {
@@ -112,7 +157,7 @@ public class BracketExample extends javax.swing.JFrame {
                 jComboBox9ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, 64, 28));
+        getContentPane().add(jComboBox9, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 620, 80, 28));
 
         jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox10.addActionListener(new java.awt.event.ActionListener() {
@@ -120,7 +165,7 @@ public class BracketExample extends javax.swing.JFrame {
                 jComboBox10ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 480, 64, 28));
+        getContentPane().add(jComboBox10, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 660, 80, 28));
 
         jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox11.addActionListener(new java.awt.event.ActionListener() {
@@ -128,7 +173,375 @@ public class BracketExample extends javax.swing.JFrame {
                 jComboBox11ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, 64, 28));
+        getContentPane().add(jComboBox11, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 420, 80, 28));
+
+        jComboBox12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox12ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox12, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 700, 80, 28));
+
+        jComboBox13.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox13ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox13, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 460, 80, 28));
+
+        jComboBox14.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox14ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox14, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 500, 80, 28));
+
+        jComboBox16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox16ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox16, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 540, 80, 28));
+
+        jComboBox17.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox17ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox17, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 580, 80, 28));
+
+        jComboBox15.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox15ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox15, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 150, 80, 28));
+
+        jComboBox18.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox18ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox18, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 170, 80, 28));
+
+        jComboBox19.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox19ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox19, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 90, 80, 28));
+
+        jComboBox20.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox20ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox20, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 130, 80, 28));
+
+        jComboBox21.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox21ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox21, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 250, 80, 28));
+
+        jComboBox22.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox22ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox22, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 210, 80, 28));
+
+        jComboBox23.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox23ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox23, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 290, 80, 28));
+
+        jComboBox24.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox24ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox24, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 330, 80, 28));
+
+        jComboBox25.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox25ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox25, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 620, 80, 28));
+
+        jComboBox26.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox26ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox26, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 660, 80, 28));
+
+        jComboBox27.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox27ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox27, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 420, 80, 28));
+
+        jComboBox28.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox28ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox28, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 700, 80, 28));
+
+        jComboBox29.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox29ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox29, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 460, 80, 28));
+
+        jComboBox30.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox30ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox30, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 500, 80, 28));
+
+        jComboBox31.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox31ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox31, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 540, 80, 28));
+
+        jComboBox32.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox32ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox32, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 580, 80, 28));
+
+        jComboBox33.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox33ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox33, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 50, 80, 28));
+
+        jComboBox34.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox34ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox34, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 680, 80, 28));
+
+        jComboBox35.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox35ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox35, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 70, 80, 28));
+
+        jComboBox36.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox36ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox36, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 230, 80, 28));
+
+        jComboBox37.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox37ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox37, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 300, 80, 28));
+
+        jComboBox38.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox38ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox38, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 440, 80, 28));
+
+        jComboBox39.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox39ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox39, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 520, 80, 28));
+
+        jComboBox40.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox40ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox40, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 600, 80, 28));
+
+        jComboBox41.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox41ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox41, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 150, 80, 28));
+        jComboBox41.getAccessibleContext().setAccessibleName("");
+
+        jComboBox42.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox42ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox42, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 680, 80, 28));
+        jComboBox42.getAccessibleContext().setAccessibleName("");
+
+        jComboBox43.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox43ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox43, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 70, 80, 28));
+        jComboBox43.getAccessibleContext().setAccessibleName("");
+
+        jComboBox44.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox44ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox44, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 640, 80, 28));
+
+        jComboBox45.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox45ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox45, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 300, 80, 28));
+        jComboBox45.getAccessibleContext().setAccessibleName("");
+
+        jComboBox46.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox46.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox46ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox46, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 440, 80, 28));
+        jComboBox46.getAccessibleContext().setAccessibleName("");
+
+        jComboBox47.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox47.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox47ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox47, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 520, 80, 28));
+        jComboBox47.getAccessibleContext().setAccessibleName("");
+
+        jComboBox48.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox48ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox48, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 600, 80, 28));
+        jComboBox48.getAccessibleContext().setAccessibleName("");
+
+        jComboBox49.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox49ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox49, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 230, 80, 28));
+        jComboBox49.getAccessibleContext().setAccessibleName("");
+
+        jComboBox50.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox50ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox50, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 100, 80, 28));
+
+        jComboBox51.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox51ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox51, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 260, 80, 28));
+
+        jComboBox52.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox52ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox52, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 480, 80, 28));
+
+        jComboBox53.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox53.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox53ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox53, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 470, 80, 28));
+
+        jComboBox54.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox54ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox54, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 630, 80, 28));
+
+        jComboBox55.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox55ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox55, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 110, 80, 28));
+
+        jComboBox56.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox56ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox56, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 270, 80, 28));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -177,6 +590,186 @@ public class BracketExample extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox11ActionPerformed
 
+    private void jComboBox12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox12ActionPerformed
+
+    private void jComboBox13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox13ActionPerformed
+
+    private void jComboBox14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox14ActionPerformed
+
+    private void jComboBox16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox16ActionPerformed
+
+    private void jComboBox17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox17ActionPerformed
+
+    private void jComboBox15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox15ActionPerformed
+
+    private void jComboBox18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox18ActionPerformed
+
+    private void jComboBox19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox19ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox19ActionPerformed
+
+    private void jComboBox20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox20ActionPerformed
+
+    private void jComboBox21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox21ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox21ActionPerformed
+
+    private void jComboBox22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox22ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox22ActionPerformed
+
+    private void jComboBox23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox23ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox23ActionPerformed
+
+    private void jComboBox24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox24ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox24ActionPerformed
+
+    private void jComboBox25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox25ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox25ActionPerformed
+
+    private void jComboBox26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox26ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox26ActionPerformed
+
+    private void jComboBox27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox27ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox27ActionPerformed
+
+    private void jComboBox28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox28ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox28ActionPerformed
+
+    private void jComboBox29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox29ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox29ActionPerformed
+
+    private void jComboBox30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox30ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox30ActionPerformed
+
+    private void jComboBox31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox31ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox31ActionPerformed
+
+    private void jComboBox32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox32ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox32ActionPerformed
+
+    private void jComboBox33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox33ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox33ActionPerformed
+
+    private void jComboBox34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox34ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox34ActionPerformed
+
+    private void jComboBox35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox35ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox35ActionPerformed
+
+    private void jComboBox36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox36ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox36ActionPerformed
+
+    private void jComboBox37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox37ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox37ActionPerformed
+
+    private void jComboBox38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox38ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox38ActionPerformed
+
+    private void jComboBox39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox39ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox39ActionPerformed
+
+    private void jComboBox40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox40ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox40ActionPerformed
+
+    private void jComboBox41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox41ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox41ActionPerformed
+
+    private void jComboBox42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox42ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox42ActionPerformed
+
+    private void jComboBox43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox43ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox43ActionPerformed
+
+    private void jComboBox44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox44ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox44ActionPerformed
+
+    private void jComboBox45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox45ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox45ActionPerformed
+
+    private void jComboBox46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox46ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox46ActionPerformed
+
+    private void jComboBox47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox47ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox47ActionPerformed
+
+    private void jComboBox48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox48ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox48ActionPerformed
+
+    private void jComboBox49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox49ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox49ActionPerformed
+
+    private void jComboBox50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox50ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox50ActionPerformed
+
+    private void jComboBox51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox51ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox51ActionPerformed
+
+    private void jComboBox52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox52ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox52ActionPerformed
+
+    private void jComboBox53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox53ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox53ActionPerformed
+
+    private void jComboBox54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox54ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox54ActionPerformed
+
+    private void jComboBox55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox55ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox55ActionPerformed
+
+    private void jComboBox56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox56ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox56ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -216,10 +809,55 @@ public class BracketExample extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox10;
     private javax.swing.JComboBox<String> jComboBox11;
+    private javax.swing.JComboBox<String> jComboBox12;
+    private javax.swing.JComboBox<String> jComboBox13;
+    private javax.swing.JComboBox<String> jComboBox14;
+    private javax.swing.JComboBox<String> jComboBox15;
+    private javax.swing.JComboBox<String> jComboBox16;
+    private javax.swing.JComboBox<String> jComboBox17;
+    private javax.swing.JComboBox<String> jComboBox18;
+    private javax.swing.JComboBox<String> jComboBox19;
     private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JComboBox<String> jComboBox20;
+    private javax.swing.JComboBox<String> jComboBox21;
+    private javax.swing.JComboBox<String> jComboBox22;
+    private javax.swing.JComboBox<String> jComboBox23;
+    private javax.swing.JComboBox<String> jComboBox24;
+    private javax.swing.JComboBox<String> jComboBox25;
+    private javax.swing.JComboBox<String> jComboBox26;
+    private javax.swing.JComboBox<String> jComboBox27;
+    private javax.swing.JComboBox<String> jComboBox28;
+    private javax.swing.JComboBox<String> jComboBox29;
     private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> jComboBox30;
+    private javax.swing.JComboBox<String> jComboBox31;
+    private javax.swing.JComboBox<String> jComboBox32;
+    private javax.swing.JComboBox<String> jComboBox33;
+    private javax.swing.JComboBox<String> jComboBox34;
+    private javax.swing.JComboBox<String> jComboBox35;
+    private javax.swing.JComboBox<String> jComboBox36;
+    private javax.swing.JComboBox<String> jComboBox37;
+    private javax.swing.JComboBox<String> jComboBox38;
+    private javax.swing.JComboBox<String> jComboBox39;
     private javax.swing.JComboBox<String> jComboBox4;
+    private javax.swing.JComboBox<String> jComboBox40;
+    private javax.swing.JComboBox<String> jComboBox41;
+    private javax.swing.JComboBox<String> jComboBox42;
+    private javax.swing.JComboBox<String> jComboBox43;
+    private javax.swing.JComboBox<String> jComboBox44;
+    private javax.swing.JComboBox<String> jComboBox45;
+    private javax.swing.JComboBox<String> jComboBox46;
+    private javax.swing.JComboBox<String> jComboBox47;
+    private javax.swing.JComboBox<String> jComboBox48;
+    private javax.swing.JComboBox<String> jComboBox49;
     private javax.swing.JComboBox<String> jComboBox5;
+    private javax.swing.JComboBox<String> jComboBox50;
+    private javax.swing.JComboBox<String> jComboBox51;
+    private javax.swing.JComboBox<String> jComboBox52;
+    private javax.swing.JComboBox<String> jComboBox53;
+    private javax.swing.JComboBox<String> jComboBox54;
+    private javax.swing.JComboBox<String> jComboBox55;
+    private javax.swing.JComboBox<String> jComboBox56;
     private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JComboBox<String> jComboBox7;
     private javax.swing.JComboBox<String> jComboBox8;
