@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 package MarchMadness;
+    import javax.swing.*;
+    import java.awt.event.*;
+    import java.awt.event.ActionListener;
 
 /**
  *
@@ -119,209 +122,249 @@ public class BracketExample extends javax.swing.JFrame {
         getContentPane().add(southBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 330, 80, 28));
 
         westBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "6 SeedW", "11 SeedW" }));
+        westBox6.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                westBox6PropertyChange(evt);
+            }
+        });
         getContentPane().add(westBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 620, 80, 28));
 
         westBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "7 SeedW", "10 SeedW" }));
+        westBox7.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                westBox7PropertyChange(evt);
+            }
+        });
         getContentPane().add(westBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 660, 80, 28));
 
         westBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1 SeedW", "16 SeedW" }));
+        westBox1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                westBox1PropertyChange(evt);
+            }
+        });
         getContentPane().add(westBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 420, 80, 28));
 
         westBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2 SeedW", "15 SeedW" }));
+        westBox8.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                westBox8PropertyChange(evt);
+            }
+        });
         getContentPane().add(westBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 700, 80, 28));
 
         westBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "8 SeedW", "9 SeedW" }));
+        westBox2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                westBox2PropertyChange(evt);
+            }
+        });
         getContentPane().add(westBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 460, 80, 28));
 
         westBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "5 SeedW", "12 SeedW" }));
+        westBox3.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                westBox3PropertyChange(evt);
+            }
+        });
         getContentPane().add(westBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 500, 80, 28));
 
         westBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "4 SeedW", "13 SeedW" }));
+        westBox4.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                westBox4PropertyChange(evt);
+            }
+        });
         getContentPane().add(westBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 540, 80, 28));
 
         westBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "3 SeedW", "14 SeedW" }));
+        westBox5.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                westBox5PropertyChange(evt);
+            }
+        });
         getContentPane().add(westBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 580, 80, 28));
 
         eastBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1 SeedE", "16 SeedE" }));
-        eastBox1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastBox1PropertyChange(evt);
+        eastBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eastBox1ActionPerformed(evt);
             }
         });
         getContentPane().add(eastBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 50, 80, 28));
 
         eastBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "4 SeedE", "13 SeedE" }));
-        eastBox4.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastBox4PropertyChange(evt);
+        eastBox4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eastBox4ActionPerformed(evt);
             }
         });
         getContentPane().add(eastBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 170, 80, 28));
 
         eastBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "8 SeedE", "9 SeedE" }));
-        eastBox2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastBox2PropertyChange(evt);
+        eastBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eastBox2ActionPerformed(evt);
             }
         });
         getContentPane().add(eastBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 90, 80, 28));
 
         eastBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "5 SeedE", "12 SeedE" }));
-        eastBox3.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastBox3PropertyChange(evt);
+        eastBox3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eastBox3ActionPerformed(evt);
             }
         });
         getContentPane().add(eastBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 130, 80, 28));
 
         eastBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "6 SeedE", "11 SeedE" }));
-        eastBox6.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastBox6PropertyChange(evt);
+        eastBox6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eastBox6ActionPerformed(evt);
             }
         });
         getContentPane().add(eastBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 250, 80, 28));
 
         eastBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "3 SeedE", "14 SeedE" }));
-        eastBox5.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastBox5PropertyChange(evt);
+        eastBox5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eastBox5ActionPerformed(evt);
             }
         });
         getContentPane().add(eastBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 210, 80, 28));
 
         eastBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "7 SeedE", "10 SeedE" }));
-        eastBox7.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastBox7PropertyChange(evt);
+        eastBox7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eastBox7ActionPerformed(evt);
             }
         });
         getContentPane().add(eastBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 290, 80, 28));
 
         eastBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2 SeedE", "15 SeedE" }));
-        eastBox8.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastBox8PropertyChange(evt);
+        eastBox8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eastBox8ActionPerformed(evt);
             }
         });
         getContentPane().add(eastBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 330, 80, 28));
 
         midBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "6 SeedM", "11 SeedM" }));
-        midBox6.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                midBox6PropertyChange(evt);
+        midBox6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                midBox6ActionPerformed(evt);
             }
         });
         getContentPane().add(midBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 620, 80, 28));
 
         midBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "7 SeedM", "10 SeedM" }));
-        midBox7.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                midBox7PropertyChange(evt);
+        midBox7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                midBox7ActionPerformed(evt);
             }
         });
         getContentPane().add(midBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 660, 80, 28));
 
         midBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1 SeedM", "16SeedM" }));
-        midBox1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                midBox1PropertyChange(evt);
+        midBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                midBox1ActionPerformed(evt);
             }
         });
         getContentPane().add(midBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 420, 80, 28));
 
         midBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2 SeedM", "15 SeedM" }));
-        midBox8.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                midBox8PropertyChange(evt);
+        midBox8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                midBox8ActionPerformed(evt);
             }
         });
         getContentPane().add(midBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 700, 80, 28));
 
         midBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "8 SeedM", "9 Seed M" }));
-        midBox2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                midBox2PropertyChange(evt);
+        midBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                midBox2ActionPerformed(evt);
             }
         });
         getContentPane().add(midBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 460, 80, 28));
 
         midBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "5 SeedM", "12 SeedM" }));
-        midBox3.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                midBox3PropertyChange(evt);
+        midBox3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                midBox3ActionPerformed(evt);
             }
         });
         getContentPane().add(midBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 500, 80, 28));
 
         midBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "4 SeedM", "13 SeedM" }));
-        midBox4.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                midBox4PropertyChange(evt);
+        midBox4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                midBox4ActionPerformed(evt);
             }
         });
         getContentPane().add(midBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 540, 80, 28));
 
         midBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "3 SeedM", "14 SeedM" }));
-        midBox5.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                midBox5PropertyChange(evt);
+        midBox5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                midBox5ActionPerformed(evt);
             }
         });
         getContentPane().add(midBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 580, 80, 28));
 
-        eastSweet2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastSweet2PropertyChange(evt);
+        eastSweet2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eastSweet2ActionPerformed(evt);
             }
         });
         getContentPane().add(eastSweet2, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 150, 80, 28));
 
-        midSweet4.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                midSweet4PropertyChange(evt);
+        midSweet4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                midSweet4ActionPerformed(evt);
             }
         });
         getContentPane().add(midSweet4, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 680, 80, 28));
 
-        eastSweet1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastSweet1PropertyChange(evt);
+        eastSweet1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eastSweet1ActionPerformed(evt);
             }
         });
         getContentPane().add(eastSweet1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 70, 80, 28));
 
-        eastSweet3.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastSweet3PropertyChange(evt);
+        eastSweet3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eastSweet3ActionPerformed(evt);
             }
         });
         getContentPane().add(eastSweet3, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 230, 80, 28));
 
-        eastSweet4.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastSweet4PropertyChange(evt);
+        eastSweet4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eastSweet4ActionPerformed(evt);
             }
         });
         getContentPane().add(eastSweet4, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 300, 80, 28));
 
-        midSweet1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                midSweet1PropertyChange(evt);
+        midSweet1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                midSweet1ActionPerformed(evt);
             }
         });
         getContentPane().add(midSweet1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 440, 80, 28));
 
-        midSweet2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                midSweet2PropertyChange(evt);
+        midSweet2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                midSweet2ActionPerformed(evt);
             }
         });
         getContentPane().add(midSweet2, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 520, 80, 28));
 
-        midSweet3.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                midSweet3PropertyChange(evt);
+        midSweet3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                midSweet3ActionPerformed(evt);
             }
         });
         getContentPane().add(midSweet3, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 600, 80, 28));
@@ -329,23 +372,48 @@ public class BracketExample extends javax.swing.JFrame {
         getContentPane().add(southSweet2, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 150, 80, 28));
         southSweet2.getAccessibleContext().setAccessibleName("");
 
+        westSweet4.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                westSweet4PropertyChange(evt);
+            }
+        });
         getContentPane().add(westSweet4, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 680, 80, 28));
         westSweet4.getAccessibleContext().setAccessibleName("");
 
         getContentPane().add(southSweet1, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 70, 80, 28));
         southSweet1.getAccessibleContext().setAccessibleName("");
 
+        westSweet3.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                westSweet3PropertyChange(evt);
+            }
+        });
         getContentPane().add(westSweet3, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 610, 80, 28));
 
         getContentPane().add(southSweet4, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 300, 80, 28));
         southSweet4.getAccessibleContext().setAccessibleName("");
 
+        westSweet1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                westSweet1PropertyChange(evt);
+            }
+        });
         getContentPane().add(westSweet1, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 440, 80, 28));
         westSweet1.getAccessibleContext().setAccessibleName("");
 
+        westSweet2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                westSweet2PropertyChange(evt);
+            }
+        });
         getContentPane().add(westSweet2, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 520, 80, 28));
         westSweet2.getAccessibleContext().setAccessibleName("");
 
+        westElite2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                westElite2PropertyChange(evt);
+            }
+        });
         getContentPane().add(westElite2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 640, 80, 28));
         westElite2.getAccessibleContext().setAccessibleName("");
 
@@ -356,54 +424,69 @@ public class BracketExample extends javax.swing.JFrame {
 
         getContentPane().add(southElite2, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 270, 80, 28));
 
+        westElite1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                westElite1PropertyChange(evt);
+            }
+        });
         getContentPane().add(westElite1, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 480, 80, 28));
 
-        midElite1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                midElite1PropertyChange(evt);
+        midElite1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                midElite1ActionPerformed(evt);
             }
         });
         getContentPane().add(midElite1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 480, 80, 28));
 
-        midElite2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                midElite2PropertyChange(evt);
+        midElite2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                midElite2ActionPerformed(evt);
             }
         });
         getContentPane().add(midElite2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 640, 80, 28));
 
-        eastElite1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastElite1PropertyChange(evt);
+        eastElite1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eastElite1ActionPerformed(evt);
             }
         });
         getContentPane().add(eastElite1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 110, 80, 28));
 
-        midFinal.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                midFinalPropertyChange(evt);
+        midFinal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                midFinalActionPerformed(evt);
             }
         });
         getContentPane().add(midFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 560, 80, 28));
 
-        eastElite2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastElite2PropertyChange(evt);
+        eastElite2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eastElite2ActionPerformed(evt);
             }
         });
         getContentPane().add(eastElite2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 270, 80, 28));
 
+        westFinal.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                westFinalPropertyChange(evt);
+            }
+        });
         getContentPane().add(westFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 560, 80, 28));
 
-        eastFinal.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastFinalPropertyChange(evt);
+        eastFinal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eastFinalActionPerformed(evt);
             }
         });
         getContentPane().add(eastFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 190, 80, 28));
 
         getContentPane().add(southFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 190, 80, 28));
 
+        finalFour2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                finalFour2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(finalFour2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 380, 80, 28));
 
         getContentPane().add(finalFour1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 380, 80, 28));
@@ -413,185 +496,219 @@ public class BracketExample extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void eastSweet2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastSweet2PropertyChange
+    private void westBox1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_westBox1PropertyChange
         // TODO add your handling code here:
-        String winner = eastSweet2.getSelectedItem().toString();
-        eastSweet1.addItem(winner);
-    }//GEN-LAST:event_eastSweet2PropertyChange
+        String winner = westBox1.getSelectedItem().toString();
+        westSweet1.addItem(winner);
+    }//GEN-LAST:event_westBox1PropertyChange
 
-    private void eastBox2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastBox2PropertyChange
+    private void westBox2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_westBox2PropertyChange
         // TODO add your handling code here:
-        String winner = eastBox2.getSelectedItem().toString();
-        eastSweet1.addItem(winner);
-    }//GEN-LAST:event_eastBox2PropertyChange
+        String winner = westBox2.getSelectedItem().toString();
+        westSweet1.addItem(winner);
+    }//GEN-LAST:event_westBox2PropertyChange
 
-    private void eastBox3PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastBox3PropertyChange
+    private void westBox3PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_westBox3PropertyChange
         // TODO add your handling code here:
-        String winner = eastBox3.getSelectedItem().toString();
-        eastSweet2.addItem(winner);
-    }//GEN-LAST:event_eastBox3PropertyChange
+        String winner = westBox3.getSelectedItem().toString();
+        westSweet2.addItem(winner);
+    }//GEN-LAST:event_westBox3PropertyChange
 
-    private void eastBox4PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastBox4PropertyChange
+    private void westBox4PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_westBox4PropertyChange
         // TODO add your handling code here:
-        String winner = eastBox4.getSelectedItem().toString();
-        eastSweet2.addItem(winner);
-    }//GEN-LAST:event_eastBox4PropertyChange
+        String winner = westBox4.getSelectedItem().toString();
+        westSweet2.addItem(winner);
+    }//GEN-LAST:event_westBox4PropertyChange
 
-    private void eastBox5PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastBox5PropertyChange
+    private void westBox5PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_westBox5PropertyChange
         // TODO add your handling code here:
-        String winner = eastBox5.getSelectedItem().toString();
-        eastSweet3.addItem(winner);
-    }//GEN-LAST:event_eastBox5PropertyChange
+        String winner = westBox5.getSelectedItem().toString();
+        westSweet3.addItem(winner);
+    }//GEN-LAST:event_westBox5PropertyChange
 
-    private void eastBox6PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastBox6PropertyChange
+    private void westBox6PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_westBox6PropertyChange
         // TODO add your handling code here:
-        String winner = eastBox6.getSelectedItem().toString();
-        eastSweet3.addItem(winner);
-    }//GEN-LAST:event_eastBox6PropertyChange
+        String winner = westBox6.getSelectedItem().toString();
+        westSweet3.addItem(winner);
+    }//GEN-LAST:event_westBox6PropertyChange
 
-    private void eastBox7PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastBox7PropertyChange
+    private void westBox7PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_westBox7PropertyChange
         // TODO add your handling code here:
-        String winner = eastBox7.getSelectedItem().toString();
-        eastSweet4.addItem(winner);
-    }//GEN-LAST:event_eastBox7PropertyChange
+        String winner = westBox7.getSelectedItem().toString();
+        westSweet4.addItem(winner);
+    }//GEN-LAST:event_westBox7PropertyChange
 
-    private void eastBox8PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastBox8PropertyChange
+    private void westBox8PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_westBox8PropertyChange
         // TODO add your handling code here:
-        String winner = eastBox8.getSelectedItem().toString();
-        eastSweet4.addItem(winner);
-    }//GEN-LAST:event_eastBox8PropertyChange
+        String winner = westBox8.getSelectedItem().toString();
+        westSweet4.addItem(winner);
+    }//GEN-LAST:event_westBox8PropertyChange
 
-    private void eastSweet1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastSweet1PropertyChange
+    private void westSweet1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_westSweet1PropertyChange
         // TODO add your handling code here:
-        String winner = eastSweet1.getSelectedItem().toString();
-        eastElite1.addItem(winner);
-    }//GEN-LAST:event_eastSweet1PropertyChange
+        String winner = westSweet1.getSelectedItem().toString();
+        westElite1.addItem(winner);
+    }//GEN-LAST:event_westSweet1PropertyChange
 
-    private void eastBox1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastBox1PropertyChange
+    private void westSweet2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_westSweet2PropertyChange
         // TODO add your handling code here:
-        String winner = eastBox1.getSelectedItem().toString();
-        eastElite1.addItem(winner);
-    }//GEN-LAST:event_eastBox1PropertyChange
+        String winner = westSweet2.getSelectedItem().toString();
+        westElite1.addItem(winner);
+    }//GEN-LAST:event_westSweet2PropertyChange
 
-    private void eastSweet3PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastSweet3PropertyChange
+    private void westSweet3PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_westSweet3PropertyChange
         // TODO add your handling code here:
-        String winner = eastSweet3.getSelectedItem().toString();
-        eastElite2.addItem(winner);
-    }//GEN-LAST:event_eastSweet3PropertyChange
+        String winner = westSweet3.getSelectedItem().toString();
+        westElite2.addItem(winner);
+    }//GEN-LAST:event_westSweet3PropertyChange
 
-    private void eastSweet4PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastSweet4PropertyChange
+    private void westSweet4PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_westSweet4PropertyChange
         // TODO add your handling code here:
-        String winner = eastSweet4.getSelectedItem().toString();
-        eastElite2.addItem(winner);
-    }//GEN-LAST:event_eastSweet4PropertyChange
+        String winner = westSweet4.getSelectedItem().toString();
+        westElite2.addItem(winner);
+    }//GEN-LAST:event_westSweet4PropertyChange
 
-    private void eastElite1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastElite1PropertyChange
+    private void westElite1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_westElite1PropertyChange
         // TODO add your handling code here:
-        String winner = eastElite1.getSelectedItem().toString();
-        eastFinal.addItem(winner);
-    }//GEN-LAST:event_eastElite1PropertyChange
+        String winner = westElite1.getSelectedItem().toString();
+        westFinal.addItem(winner);
+    }//GEN-LAST:event_westElite1PropertyChange
 
-    private void eastElite2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastElite2PropertyChange
+    private void westElite2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_westElite2PropertyChange
         // TODO add your handling code here:
-        String winner = eastElite2.getSelectedItem().toString();
-        eastFinal.addItem(winner);
-    }//GEN-LAST:event_eastElite2PropertyChange
+        String winner = westElite2.getSelectedItem().toString();
+        westFinal.addItem(winner);
+    }//GEN-LAST:event_westElite2PropertyChange
 
-    private void eastFinalPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastFinalPropertyChange
+    private void westFinalPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_westFinalPropertyChange
         // TODO add your handling code here:
-        String winner = eastFinal.getSelectedItem().toString();
-        finalFour2.addItem(winner);
-    }//GEN-LAST:event_eastFinalPropertyChange
+        String winner = westFinal.getSelectedItem().toString();
+        finalFour1.addItem(winner);
+    }//GEN-LAST:event_westFinalPropertyChange
 
-    private void midBox1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_midBox1PropertyChange
+    private void eastBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox4ActionPerformed
+        eastSweet2.addItem((String)eastBox4.getSelectedItem());
+    }//GEN-LAST:event_eastBox4ActionPerformed
+
+    private void eastBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox3ActionPerformed
+        eastSweet2.addItem((String)eastBox3.getSelectedItem());
+    }//GEN-LAST:event_eastBox3ActionPerformed
+
+    private void eastBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox1ActionPerformed
+        eastSweet1.addItem((String)eastBox1.getSelectedItem());
+    }//GEN-LAST:event_eastBox1ActionPerformed
+
+    private void eastBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox2ActionPerformed
+        eastSweet1.addItem((String)eastBox2.getSelectedItem());
+    }//GEN-LAST:event_eastBox2ActionPerformed
+
+    private void eastBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox5ActionPerformed
+        eastSweet3.addItem((String)eastBox5.getSelectedItem());
+    }//GEN-LAST:event_eastBox5ActionPerformed
+
+    private void eastBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox6ActionPerformed
+        eastSweet3.addItem((String)eastBox6.getSelectedItem());
+    }//GEN-LAST:event_eastBox6ActionPerformed
+
+    private void eastBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox7ActionPerformed
+        eastSweet4.addItem((String)eastBox7.getSelectedItem());
+    }//GEN-LAST:event_eastBox7ActionPerformed
+
+    private void eastBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox8ActionPerformed
+        eastSweet4.addItem((String)eastBox8.getSelectedItem());
+    }//GEN-LAST:event_eastBox8ActionPerformed
+
+    private void eastSweet1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastSweet1ActionPerformed
+        eastElite1.addItem((String)eastSweet1.getSelectedItem());
+    }//GEN-LAST:event_eastSweet1ActionPerformed
+
+    private void eastSweet2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastSweet2ActionPerformed
+        eastElite1.addItem((String)eastSweet2.getSelectedItem());
+    }//GEN-LAST:event_eastSweet2ActionPerformed
+
+    private void eastSweet3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastSweet3ActionPerformed
+        eastElite2.addItem((String)eastSweet3.getSelectedItem());
+    }//GEN-LAST:event_eastSweet3ActionPerformed
+
+    private void eastSweet4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastSweet4ActionPerformed
+        eastElite2.addItem((String)eastSweet4.getSelectedItem());
+    }//GEN-LAST:event_eastSweet4ActionPerformed
+
+    private void eastElite2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastElite2ActionPerformed
+        eastFinal.addItem((String)eastElite2.getSelectedItem());
+    }//GEN-LAST:event_eastElite2ActionPerformed
+
+    private void eastElite1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastElite1ActionPerformed
+        eastFinal.addItem((String)eastElite1.getSelectedItem());
+    }//GEN-LAST:event_eastElite1ActionPerformed
+
+    private void eastFinalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastFinalActionPerformed
+        finalFour2.addItem((String)eastFinal.getSelectedItem());
+    }//GEN-LAST:event_eastFinalActionPerformed
+
+    private void finalFour2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finalFour2ActionPerformed
+        finalBox.addItem((String)finalFour2.getSelectedItem());
+    }//GEN-LAST:event_finalFour2ActionPerformed
+
+    private void midBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox1ActionPerformed
+        eastSweet2.addItem((String)eastBox4.getSelectedItem());
+    }//GEN-LAST:event_midBox1ActionPerformed
+
+    private void midBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox2ActionPerformed
         // TODO add your handling code here:
-        String winner = midBox1.getSelectedItem().toString();
-        midSweet1.addItem(winner);
-    }//GEN-LAST:event_midBox1PropertyChange
+    }//GEN-LAST:event_midBox2ActionPerformed
 
-    private void midBox2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_midBox2PropertyChange
+    private void midBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox3ActionPerformed
         // TODO add your handling code here:
-        String winner = midBox2.getSelectedItem().toString();
-        midSweet1.addItem(winner);
-    }//GEN-LAST:event_midBox2PropertyChange
+    }//GEN-LAST:event_midBox3ActionPerformed
 
-    private void midBox3PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_midBox3PropertyChange
+    private void midBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox4ActionPerformed
         // TODO add your handling code here:
-        String winner = midBox3.getSelectedItem().toString();
-        midSweet2.addItem(winner);
-    }//GEN-LAST:event_midBox3PropertyChange
+    }//GEN-LAST:event_midBox4ActionPerformed
 
-    private void midBox4PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_midBox4PropertyChange
-        // TODO add your handling code here:\
-        String winner = midBox4.getSelectedItem().toString();
-        midSweet2.addItem(winner);
-    }//GEN-LAST:event_midBox4PropertyChange
-
-    private void midBox5PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_midBox5PropertyChange
+    private void midBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox5ActionPerformed
         // TODO add your handling code here:
-        String winner = midBox5.getSelectedItem().toString();
-        midSweet3.addItem(winner);
-    }//GEN-LAST:event_midBox5PropertyChange
+    }//GEN-LAST:event_midBox5ActionPerformed
 
-    private void midBox6PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_midBox6PropertyChange
+    private void midBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox6ActionPerformed
         // TODO add your handling code here:
-        String winner = midBox6.getSelectedItem().toString();
-        midSweet3.addItem(winner);
-    }//GEN-LAST:event_midBox6PropertyChange
+    }//GEN-LAST:event_midBox6ActionPerformed
 
-    private void midBox7PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_midBox7PropertyChange
+    private void midBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox7ActionPerformed
         // TODO add your handling code here:
-        String winner = midBox7.getSelectedItem().toString();
-        midSweet4.addItem(winner);
-    }//GEN-LAST:event_midBox7PropertyChange
+    }//GEN-LAST:event_midBox7ActionPerformed
 
-    private void midBox8PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_midBox8PropertyChange
+    private void midBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox8ActionPerformed
         // TODO add your handling code here:
-        String winner = midBox8.getSelectedItem().toString();
-        midSweet4.addItem(winner);
-    }//GEN-LAST:event_midBox8PropertyChange
+    }//GEN-LAST:event_midBox8ActionPerformed
 
-    private void midSweet1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_midSweet1PropertyChange
+    private void midSweet1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midSweet1ActionPerformed
         // TODO add your handling code here:
-        String winner = midSweet1.getSelectedItem().toString();
-        midElite1.addItem(winner);
-    }//GEN-LAST:event_midSweet1PropertyChange
+    }//GEN-LAST:event_midSweet1ActionPerformed
 
-    private void midSweet2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_midSweet2PropertyChange
+    private void midSweet2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midSweet2ActionPerformed
         // TODO add your handling code here:
-        String winner = midSweet2.getSelectedItem().toString();
-        midElite1.addItem(winner);
-    }//GEN-LAST:event_midSweet2PropertyChange
+    }//GEN-LAST:event_midSweet2ActionPerformed
 
-    private void midSweet3PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_midSweet3PropertyChange
+    private void midSweet3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midSweet3ActionPerformed
         // TODO add your handling code here:
-        String winner = midSweet3.getSelectedItem().toString();
-        midElite2.addItem(winner);
-    }//GEN-LAST:event_midSweet3PropertyChange
+    }//GEN-LAST:event_midSweet3ActionPerformed
 
-    private void midSweet4PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_midSweet4PropertyChange
+    private void midSweet4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midSweet4ActionPerformed
         // TODO add your handling code here:
-        String winner = midSweet4.getSelectedItem().toString();
-        midElite2.addItem(winner);
-    }//GEN-LAST:event_midSweet4PropertyChange
+    }//GEN-LAST:event_midSweet4ActionPerformed
 
-    private void midElite1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_midElite1PropertyChange
+    private void midElite1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midElite1ActionPerformed
         // TODO add your handling code here:
-        String winner = midElite1.getSelectedItem().toString();
-        midFinal.addItem(winner);
-    }//GEN-LAST:event_midElite1PropertyChange
+    }//GEN-LAST:event_midElite1ActionPerformed
 
-    private void midElite2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_midElite2PropertyChange
+    private void midElite2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midElite2ActionPerformed
         // TODO add your handling code here:
-        String winner = midElite2.getSelectedItem().toString();
-        midFinal.addItem(winner);
-    }//GEN-LAST:event_midElite2PropertyChange
+    }//GEN-LAST:event_midElite2ActionPerformed
 
-    private void midFinalPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_midFinalPropertyChange
+    private void midFinalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midFinalActionPerformed
         // TODO add your handling code here:
-        String winner = midFinal.getSelectedItem().toString();
-        finalFour2.addItem(winner);
-    }//GEN-LAST:event_midFinalPropertyChange
+    }//GEN-LAST:event_midFinalActionPerformed
 
     /**
      * @param args the command line arguments
