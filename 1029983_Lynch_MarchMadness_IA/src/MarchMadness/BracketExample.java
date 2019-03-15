@@ -43,7 +43,7 @@ public class BracketExample extends javax.swing.JFrame {
         westBox3 = new javax.swing.JComboBox<>();
         westBox4 = new javax.swing.JComboBox<>();
         westBox5 = new javax.swing.JComboBox<>();
-        eastSweet2 = new javax.swing.JComboBox<>();
+        eastBox1 = new javax.swing.JComboBox<>();
         eastBox4 = new javax.swing.JComboBox<>();
         eastBox2 = new javax.swing.JComboBox<>();
         eastBox3 = new javax.swing.JComboBox<>();
@@ -59,7 +59,7 @@ public class BracketExample extends javax.swing.JFrame {
         midBox3 = new javax.swing.JComboBox<>();
         midBox4 = new javax.swing.JComboBox<>();
         midBox5 = new javax.swing.JComboBox<>();
-        eastBox1 = new javax.swing.JComboBox<>();
+        eastSweet2 = new javax.swing.JComboBox<>();
         midSweet4 = new javax.swing.JComboBox<>();
         eastSweet1 = new javax.swing.JComboBox<>();
         eastSweet3 = new javax.swing.JComboBox<>();
@@ -70,11 +70,11 @@ public class BracketExample extends javax.swing.JFrame {
         southSweet2 = new javax.swing.JComboBox<>();
         westSweet4 = new javax.swing.JComboBox<>();
         southSweet1 = new javax.swing.JComboBox<>();
-        westElite2 = new javax.swing.JComboBox<>();
+        westSweet3 = new javax.swing.JComboBox<>();
         southSweet4 = new javax.swing.JComboBox<>();
         westSweet1 = new javax.swing.JComboBox<>();
         westSweet2 = new javax.swing.JComboBox<>();
-        westSweet3 = new javax.swing.JComboBox<>();
+        westElite2 = new javax.swing.JComboBox<>();
         southSweet3 = new javax.swing.JComboBox<>();
         southElite1 = new javax.swing.JComboBox<>();
         southElite2 = new javax.swing.JComboBox<>();
@@ -84,12 +84,13 @@ public class BracketExample extends javax.swing.JFrame {
         eastElite1 = new javax.swing.JComboBox<>();
         midFinal = new javax.swing.JComboBox<>();
         eastElite2 = new javax.swing.JComboBox<>();
-        finalFour1 = new javax.swing.JComboBox<>();
+        westFinal = new javax.swing.JComboBox<>();
         eastFinal = new javax.swing.JComboBox<>();
         southFinal = new javax.swing.JComboBox<>();
         finalFour2 = new javax.swing.JComboBox<>();
-        westFinal = new javax.swing.JComboBox<>();
+        finalFour1 = new javax.swing.JComboBox<>();
         finalBox = new javax.swing.JComboBox<>();
+        nameField = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -222,27 +223,18 @@ public class BracketExample extends javax.swing.JFrame {
         });
         getContentPane().add(westBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 580, 80, 28));
 
-        eastSweet2.addActionListener(new java.awt.event.ActionListener() {
+        eastBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1 SeedE", "16 SeedE" }));
+        eastBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                eastSweet2ActionPerformed(evt);
+                eastBox1ActionPerformed(evt);
             }
         });
-        eastSweet2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastSweet2PropertyChange(evt);
-            }
-        });
-        getContentPane().add(eastSweet2, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 150, 80, 28));
+        getContentPane().add(eastBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 50, 80, 28));
 
         eastBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "4 SeedE", "13 SeedE" }));
         eastBox4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 eastBox4ActionPerformed(evt);
-            }
-        });
-        eastBox4.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastBox4PropertyChange(evt);
             }
         });
         getContentPane().add(eastBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 170, 80, 28));
@@ -253,22 +245,12 @@ public class BracketExample extends javax.swing.JFrame {
                 eastBox2ActionPerformed(evt);
             }
         });
-        eastBox2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastBox2PropertyChange(evt);
-            }
-        });
         getContentPane().add(eastBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 90, 80, 28));
 
         eastBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "5 SeedE", "12 SeedE" }));
         eastBox3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 eastBox3ActionPerformed(evt);
-            }
-        });
-        eastBox3.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastBox3PropertyChange(evt);
             }
         });
         getContentPane().add(eastBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 130, 80, 28));
@@ -279,22 +261,12 @@ public class BracketExample extends javax.swing.JFrame {
                 eastBox6ActionPerformed(evt);
             }
         });
-        eastBox6.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastBox6PropertyChange(evt);
-            }
-        });
         getContentPane().add(eastBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 250, 80, 28));
 
         eastBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "3 SeedE", "14 SeedE" }));
         eastBox5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 eastBox5ActionPerformed(evt);
-            }
-        });
-        eastBox5.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastBox5PropertyChange(evt);
             }
         });
         getContentPane().add(eastBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 210, 80, 28));
@@ -305,22 +277,12 @@ public class BracketExample extends javax.swing.JFrame {
                 eastBox7ActionPerformed(evt);
             }
         });
-        eastBox7.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastBox7PropertyChange(evt);
-            }
-        });
         getContentPane().add(eastBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 290, 80, 28));
 
         eastBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2 SeedE", "15 SeedE" }));
         eastBox8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 eastBox8ActionPerformed(evt);
-            }
-        });
-        eastBox8.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastBox8PropertyChange(evt);
             }
         });
         getContentPane().add(eastBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 330, 80, 28));
@@ -389,18 +351,12 @@ public class BracketExample extends javax.swing.JFrame {
         });
         getContentPane().add(midBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 580, 80, 28));
 
-        eastBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1 SeedE", "16 SeedE" }));
-        eastBox1.addActionListener(new java.awt.event.ActionListener() {
+        eastSweet2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                eastBox1ActionPerformed(evt);
+                eastSweet2ActionPerformed(evt);
             }
         });
-        eastBox1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastBox1PropertyChange(evt);
-            }
-        });
-        getContentPane().add(eastBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 50, 80, 28));
+        getContentPane().add(eastSweet2, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 150, 80, 28));
 
         midSweet4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -414,11 +370,6 @@ public class BracketExample extends javax.swing.JFrame {
                 eastSweet1ActionPerformed(evt);
             }
         });
-        eastSweet1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastSweet1PropertyChange(evt);
-            }
-        });
         getContentPane().add(eastSweet1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 70, 80, 28));
 
         eastSweet3.addActionListener(new java.awt.event.ActionListener() {
@@ -426,21 +377,11 @@ public class BracketExample extends javax.swing.JFrame {
                 eastSweet3ActionPerformed(evt);
             }
         });
-        eastSweet3.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastSweet3PropertyChange(evt);
-            }
-        });
         getContentPane().add(eastSweet3, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 230, 80, 28));
 
         eastSweet4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 eastSweet4ActionPerformed(evt);
-            }
-        });
-        eastSweet4.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastSweet4PropertyChange(evt);
             }
         });
         getContentPane().add(eastSweet4, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 300, 80, 28));
@@ -490,12 +431,12 @@ public class BracketExample extends javax.swing.JFrame {
         getContentPane().add(southSweet1, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 70, 80, 28));
         southSweet1.getAccessibleContext().setAccessibleName("");
 
-        westElite2.addActionListener(new java.awt.event.ActionListener() {
+        westSweet3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                westElite2ActionPerformed(evt);
+                westSweet3ActionPerformed(evt);
             }
         });
-        getContentPane().add(westElite2, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 640, 80, 28));
+        getContentPane().add(westSweet3, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 610, 80, 28));
 
         southSweet4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -521,13 +462,13 @@ public class BracketExample extends javax.swing.JFrame {
         getContentPane().add(westSweet2, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 520, 80, 28));
         westSweet2.getAccessibleContext().setAccessibleName("");
 
-        westSweet3.addActionListener(new java.awt.event.ActionListener() {
+        westElite2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                westSweet3ActionPerformed(evt);
+                westElite2ActionPerformed(evt);
             }
         });
-        getContentPane().add(westSweet3, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 600, 80, 28));
-        westSweet3.getAccessibleContext().setAccessibleName("");
+        getContentPane().add(westElite2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 640, 80, 28));
+        westElite2.getAccessibleContext().setAccessibleName("");
 
         southSweet3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -572,6 +513,11 @@ public class BracketExample extends javax.swing.JFrame {
         });
         getContentPane().add(midElite2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 640, 80, 28));
 
+        eastElite1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eastElite1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(eastElite1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 110, 80, 28));
 
         midFinal.addActionListener(new java.awt.event.ActionListener() {
@@ -586,19 +532,14 @@ public class BracketExample extends javax.swing.JFrame {
                 eastElite2ActionPerformed(evt);
             }
         });
-        eastElite2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                eastElite2PropertyChange(evt);
-            }
-        });
         getContentPane().add(eastElite2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 270, 80, 28));
 
-        finalFour1.addActionListener(new java.awt.event.ActionListener() {
+        westFinal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                finalFour1ActionPerformed(evt);
+                westFinalActionPerformed(evt);
             }
         });
-        getContentPane().add(finalFour1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 380, 80, 28));
+        getContentPane().add(westFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 560, 80, 28));
 
         eastFinal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -621,337 +562,287 @@ public class BracketExample extends javax.swing.JFrame {
         });
         getContentPane().add(finalFour2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 380, 80, 28));
 
-        westFinal.addActionListener(new java.awt.event.ActionListener() {
+        finalFour1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                westFinalActionPerformed(evt);
+                finalFour1ActionPerformed(evt);
             }
         });
-        getContentPane().add(westFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 560, 80, 28));
+        getContentPane().add(finalFour1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 380, 80, 28));
 
         getContentPane().add(finalBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 310, 90, 40));
+
+        nameField.setEditable(false);
+        nameField.setBackground(new java.awt.Color(240, 240, 240));
+        nameField.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        nameField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        nameField.setText("Main Bracket");
+        nameField.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        nameField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nameFieldActionPerformed(evt);
+            }
+        });
+        getContentPane().add(nameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 30, 160, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void southBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_southBox1ActionPerformed
-
-    private void southBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southBox4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_southBox4ActionPerformed
-
-    private void southBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southBox2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_southBox2ActionPerformed
-
-    private void southBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southBox3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_southBox3ActionPerformed
-
-    private void southBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southBox6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_southBox6ActionPerformed
-
-    private void southBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southBox5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_southBox5ActionPerformed
-
-    private void southBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southBox7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_southBox7ActionPerformed
-
-    private void southBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southBox8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_southBox8ActionPerformed
-
-    private void westBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westBox6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_westBox6ActionPerformed
-
-    private void westBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westBox7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_westBox7ActionPerformed
-
-    private void westBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_westBox1ActionPerformed
-
-    private void westBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westBox8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_westBox8ActionPerformed
-
-    private void westBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westBox2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_westBox2ActionPerformed
-
-    private void westBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westBox3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_westBox3ActionPerformed
-
-    private void westBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westBox4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_westBox4ActionPerformed
-
-    private void westBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westBox5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_westBox5ActionPerformed
-
-    private void eastSweet2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastSweet2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eastSweet2ActionPerformed
-
     private void eastBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox4ActionPerformed
-        // TODO add your handling code here:
+        eastSweet2.addItem((String)eastBox4.getSelectedItem());                 // chooses the selected pick in eastBox1, converts the int value to
+                                                                                // a string, and then adds the string to the eastSweet1 combobox
     }//GEN-LAST:event_eastBox4ActionPerformed
 
-    private void eastBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eastBox2ActionPerformed
-
     private void eastBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox3ActionPerformed
-        // TODO add your handling code here:
+        eastSweet2.addItem((String)eastBox3.getSelectedItem());
     }//GEN-LAST:event_eastBox3ActionPerformed
 
-    private void eastBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eastBox6ActionPerformed
+    private void eastBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox1ActionPerformed
+        eastSweet1.addItem((String)eastBox1.getSelectedItem());
+    }//GEN-LAST:event_eastBox1ActionPerformed
+
+    private void eastBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox2ActionPerformed
+        eastSweet1.addItem((String)eastBox2.getSelectedItem());
+    }//GEN-LAST:event_eastBox2ActionPerformed
 
     private void eastBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox5ActionPerformed
-        // TODO add your handling code here:
+        eastSweet3.addItem((String)eastBox5.getSelectedItem());
     }//GEN-LAST:event_eastBox5ActionPerformed
 
+    private void eastBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox6ActionPerformed
+        eastSweet3.addItem((String)eastBox6.getSelectedItem());
+    }//GEN-LAST:event_eastBox6ActionPerformed
+
     private void eastBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox7ActionPerformed
-        // TODO add your handling code here:
+        eastSweet4.addItem((String)eastBox7.getSelectedItem());
     }//GEN-LAST:event_eastBox7ActionPerformed
 
     private void eastBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox8ActionPerformed
-        // TODO add your handling code here:
+        eastSweet4.addItem((String)eastBox8.getSelectedItem());
     }//GEN-LAST:event_eastBox8ActionPerformed
 
-    private void midBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_midBox6ActionPerformed
-
-    private void midBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_midBox7ActionPerformed
-
-    private void midBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_midBox1ActionPerformed
-
-    private void midBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_midBox8ActionPerformed
-
-    private void midBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_midBox2ActionPerformed
-
-    private void midBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_midBox3ActionPerformed
-
-    private void midBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_midBox4ActionPerformed
-
-    private void midBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_midBox5ActionPerformed
-
-    private void eastBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eastBox1ActionPerformed
-
-    private void midSweet4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midSweet4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_midSweet4ActionPerformed
-
     private void eastSweet1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastSweet1ActionPerformed
-        // TODO add your handling code here:
+        eastElite1.addItem((String)eastSweet1.getSelectedItem());               // chooses the selected pick in eastSweet1, converts the int value to
+                                                                                // a string, and then adds the string to the eastElite1 combobox
     }//GEN-LAST:event_eastSweet1ActionPerformed
 
+    private void eastSweet2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastSweet2ActionPerformed
+        eastElite1.addItem((String)eastSweet2.getSelectedItem());
+    }//GEN-LAST:event_eastSweet2ActionPerformed
+
     private void eastSweet3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastSweet3ActionPerformed
-        // TODO add your handling code here:
+        eastElite2.addItem((String)eastSweet3.getSelectedItem());
     }//GEN-LAST:event_eastSweet3ActionPerformed
 
     private void eastSweet4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastSweet4ActionPerformed
-        // TODO add your handling code here:
+        eastElite2.addItem((String)eastSweet4.getSelectedItem());
     }//GEN-LAST:event_eastSweet4ActionPerformed
 
+    private void eastElite2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastElite2ActionPerformed
+        eastFinal.addItem((String)eastElite2.getSelectedItem());                // chooses the selected pick in eastElite1, converts the int value to
+                                                                                // a string, and then adds the string to the eastFinal combobox
+    }//GEN-LAST:event_eastElite2ActionPerformed
+
+    private void eastElite1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastElite1ActionPerformed
+        eastFinal.addItem((String)eastElite1.getSelectedItem());
+    }//GEN-LAST:event_eastElite1ActionPerformed
+
+    private void eastFinalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastFinalActionPerformed
+        finalFour2.addItem((String)eastFinal.getSelectedItem());                // chooses the selected pick in eastFinal, converts the int value to
+                                                                                // a string, and then adds the string to the finalFour2 combobox
+    }//GEN-LAST:event_eastFinalActionPerformed
+
+    private void finalFour2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finalFour2ActionPerformed
+        finalBox.addItem((String)finalFour2.getSelectedItem());                 // chooses the selected pick in finalFour2, converts the int value to
+                                                                                // a string, and then adds the string to the finalBox combobox
+    }//GEN-LAST:event_finalFour2ActionPerformed
+
+    private void midBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox1ActionPerformed
+        midSweet1.addItem((String)midBox1.getSelectedItem());
+    }//GEN-LAST:event_midBox1ActionPerformed
+
+    private void midBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox2ActionPerformed
+        midSweet1.addItem((String)midBox2.getSelectedItem());
+    }//GEN-LAST:event_midBox2ActionPerformed
+
+    private void midBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox3ActionPerformed
+        midSweet2.addItem((String)midBox3.getSelectedItem());
+    }//GEN-LAST:event_midBox3ActionPerformed
+
+    private void midBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox4ActionPerformed
+        midSweet2.addItem((String)midBox4.getSelectedItem());
+    }//GEN-LAST:event_midBox4ActionPerformed
+
+    private void midBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox5ActionPerformed
+        midSweet3.addItem((String)midBox5.getSelectedItem());
+    }//GEN-LAST:event_midBox5ActionPerformed
+
+    private void midBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox6ActionPerformed
+        midSweet3.addItem((String)midBox6.getSelectedItem());
+    }//GEN-LAST:event_midBox6ActionPerformed
+
+    private void midBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox7ActionPerformed
+        midSweet4.addItem((String)midBox7.getSelectedItem());
+    }//GEN-LAST:event_midBox7ActionPerformed
+
+    private void midBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midBox8ActionPerformed
+        midSweet4.addItem((String)midBox8.getSelectedItem());
+    }//GEN-LAST:event_midBox8ActionPerformed
+
     private void midSweet1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midSweet1ActionPerformed
-        // TODO add your handling code here:
+        midElite1.addItem((String)midSweet1.getSelectedItem());
     }//GEN-LAST:event_midSweet1ActionPerformed
 
     private void midSweet2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midSweet2ActionPerformed
-        // TODO add your handling code here:
+        midElite1.addItem((String)midSweet2.getSelectedItem());
     }//GEN-LAST:event_midSweet2ActionPerformed
 
     private void midSweet3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midSweet3ActionPerformed
-        // TODO add your handling code here:
+        midElite2.addItem((String)midSweet3.getSelectedItem());
     }//GEN-LAST:event_midSweet3ActionPerformed
 
-    private void southSweet2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southSweet2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_southSweet2ActionPerformed
-
-    private void westSweet4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westSweet4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_westSweet4ActionPerformed
-
-    private void southSweet1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southSweet1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_southSweet1ActionPerformed
-
-    private void westElite2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westElite2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_westElite2ActionPerformed
-
-    private void southSweet4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southSweet4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_southSweet4ActionPerformed
-
-    private void westSweet1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westSweet1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_westSweet1ActionPerformed
-
-    private void westSweet2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westSweet2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_westSweet2ActionPerformed
-
-    private void westSweet3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westSweet3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_westSweet3ActionPerformed
-
-    private void southSweet3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southSweet3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_southSweet3ActionPerformed
-
-    private void southElite1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southElite1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_southElite1ActionPerformed
-
-    private void southElite2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southElite2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_southElite2ActionPerformed
-
-    private void westElite1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westElite1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_westElite1ActionPerformed
+    private void midSweet4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midSweet4ActionPerformed
+        midElite2.addItem((String)midSweet4.getSelectedItem());
+    }//GEN-LAST:event_midSweet4ActionPerformed
 
     private void midElite1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midElite1ActionPerformed
-        // TODO add your handling code here:
+        midFinal.addItem((String)midElite1.getSelectedItem());
     }//GEN-LAST:event_midElite1ActionPerformed
 
     private void midElite2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midElite2ActionPerformed
-        // TODO add your handling code here:
+        midFinal.addItem((String)midElite2.getSelectedItem());
     }//GEN-LAST:event_midElite2ActionPerformed
 
     private void midFinalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_midFinalActionPerformed
-        // TODO add your handling code here:
+        finalFour2.addItem((String)midFinal.getSelectedItem());
     }//GEN-LAST:event_midFinalActionPerformed
 
-    private void eastElite2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastElite2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eastElite2ActionPerformed
+    private void westBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westBox1ActionPerformed
+        westSweet1.addItem((String)westBox1.getSelectedItem());
+    }//GEN-LAST:event_westBox1ActionPerformed
 
-    private void finalFour1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finalFour1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_finalFour1ActionPerformed
+    private void westBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westBox2ActionPerformed
+        westSweet1.addItem((String)westBox2.getSelectedItem());
+    }//GEN-LAST:event_westBox2ActionPerformed
 
-    private void eastFinalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eastFinalActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eastFinalActionPerformed
+    private void westBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westBox3ActionPerformed
+        westSweet2.addItem((String)westBox3.getSelectedItem());;
+    }//GEN-LAST:event_westBox3ActionPerformed
 
-    private void southFinalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southFinalActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_southFinalActionPerformed
+    private void westBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westBox4ActionPerformed
+        westSweet2.addItem((String)westBox4.getSelectedItem());
+    }//GEN-LAST:event_westBox4ActionPerformed
 
-    private void finalFour2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finalFour2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_finalFour2ActionPerformed
+    private void westBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westBox5ActionPerformed
+        westSweet3.addItem((String)westBox5.getSelectedItem());
+    }//GEN-LAST:event_westBox5ActionPerformed
+
+    private void westBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westBox6ActionPerformed
+        westSweet3.addItem((String)westBox6.getSelectedItem());
+    }//GEN-LAST:event_westBox6ActionPerformed
+
+    private void westBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westBox7ActionPerformed
+        westSweet4.addItem((String)westBox7.getSelectedItem());
+    }//GEN-LAST:event_westBox7ActionPerformed
+
+    private void westBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westBox8ActionPerformed
+        westSweet4.addItem((String)westBox8.getSelectedItem());
+    }//GEN-LAST:event_westBox8ActionPerformed
+
+    private void westSweet1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westSweet1ActionPerformed
+        westElite1.addItem((String)westSweet1.getSelectedItem());
+    }//GEN-LAST:event_westSweet1ActionPerformed
+
+    private void westSweet2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westSweet2ActionPerformed
+        westElite1.addItem((String)westSweet2.getSelectedItem());
+    }//GEN-LAST:event_westSweet2ActionPerformed
+
+    private void westSweet3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westSweet3ActionPerformed
+        westElite2.addItem((String)westSweet3.getSelectedItem());
+    }//GEN-LAST:event_westSweet3ActionPerformed
+
+    private void westSweet4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westSweet4ActionPerformed
+        westElite2.addItem((String)westSweet4.getSelectedItem());
+    }//GEN-LAST:event_westSweet4ActionPerformed
+
+    private void westElite1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westElite1ActionPerformed
+        westFinal.addItem((String)westElite1.getSelectedItem());
+    }//GEN-LAST:event_westElite1ActionPerformed
+
+    private void westElite2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westElite2ActionPerformed
+        westFinal.addItem((String)westElite2.getSelectedItem());
+    }//GEN-LAST:event_westElite2ActionPerformed
 
     private void westFinalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_westFinalActionPerformed
-        // TODO add your handling code here:
+        finalFour1.addItem((String)westFinal.getSelectedItem());
     }//GEN-LAST:event_westFinalActionPerformed
 
-    private void eastBox1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastBox1PropertyChange
-        // TODO add your handling code here:
-        String winner = eastBox1.getSelectedItem().toString();
-        eastSweet1.addItem(winner);
-    }//GEN-LAST:event_eastBox1PropertyChange
+    private void finalFour1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finalFour1ActionPerformed
+        finalBox.addItem((String)finalFour1.getSelectedItem());
+    }//GEN-LAST:event_finalFour1ActionPerformed
 
-    private void eastBox2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastBox2PropertyChange
-        // TODO add your handling code here:
-        String winner = eastBox2.getSelectedItem().toString();
-        eastSweet1.addItem(winner);
-    }//GEN-LAST:event_eastBox2PropertyChange
+    private void southBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southBox1ActionPerformed
+        southSweet1.addItem((String)southBox1.getSelectedItem());
+    }//GEN-LAST:event_southBox1ActionPerformed
 
-    private void eastBox3PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastBox3PropertyChange
-        // TODO add your handling code here:
-        String winner = eastBox3.getSelectedItem().toString();
-        eastSweet2.addItem(winner);
-    }//GEN-LAST:event_eastBox3PropertyChange
+    private void southBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southBox2ActionPerformed
+        southSweet1.addItem((String)southBox2.getSelectedItem());
+    }//GEN-LAST:event_southBox2ActionPerformed
 
-    private void eastBox4PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastBox4PropertyChange
-        // TODO add your handling code here:
-        String winner = eastBox4.getSelectedItem().toString();
-        eastSweet2.addItem(winner);
-    }//GEN-LAST:event_eastBox4PropertyChange
+    private void southBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southBox3ActionPerformed
+        southSweet2.addItem((String)southBox3.getSelectedItem());
+    }//GEN-LAST:event_southBox3ActionPerformed
 
-    private void eastBox5PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastBox5PropertyChange
-        // TODO add your handling code here:
-        String winner = eastBox5.getSelectedItem().toString();
-        eastSweet3.addItem(winner);
-    }//GEN-LAST:event_eastBox5PropertyChange
+    private void southBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southBox4ActionPerformed
+        southSweet2.addItem((String)southBox4.getSelectedItem());
+    }//GEN-LAST:event_southBox4ActionPerformed
 
-    private void eastBox6PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastBox6PropertyChange
-        // TODO add your handling code here:
-        String winner = eastBox6.getSelectedItem().toString();
-        eastSweet3.addItem(winner);
-    }//GEN-LAST:event_eastBox6PropertyChange
+    private void southBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southBox5ActionPerformed
+        southSweet3.addItem((String)southBox5.getSelectedItem());
+    }//GEN-LAST:event_southBox5ActionPerformed
 
-    private void eastBox7PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastBox7PropertyChange
-        // TODO add your handling code here:
-        String winner = eastBox7.getSelectedItem().toString();
-        eastSweet4.addItem(winner);
-    }//GEN-LAST:event_eastBox7PropertyChange
+    private void southBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southBox6ActionPerformed
+        southSweet3.addItem((String)southBox6.getSelectedItem());
+    }//GEN-LAST:event_southBox6ActionPerformed
 
-    private void eastBox8PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastBox8PropertyChange
-        // TODO add your handling code here:
-        String winner = eastBox8.getSelectedItem().toString();
-        eastSweet4.addItem(winner);
-    }//GEN-LAST:event_eastBox8PropertyChange
+    private void southBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southBox7ActionPerformed
+        southSweet4.addItem((String)southBox7.getSelectedItem());
+    }//GEN-LAST:event_southBox7ActionPerformed
 
-    private void eastElite2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastElite2PropertyChange
-        // TODO add your handling code here:
-    }//GEN-LAST:event_eastElite2PropertyChange
+    private void southBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southBox8ActionPerformed
+        southSweet4.addItem((String)southBox8.getSelectedItem());
+    }//GEN-LAST:event_southBox8ActionPerformed
 
-    private void eastSweet1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastSweet1PropertyChange
-        // TODO add your handling code here:
-        String winner = eastSweet1.getSelectedItem().toString();
-        eastElite1.addItem(winner);
-    }//GEN-LAST:event_eastSweet1PropertyChange
+    private void southSweet1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southSweet1ActionPerformed
+        southElite1.addItem((String)southSweet1.getSelectedItem());
+    }//GEN-LAST:event_southSweet1ActionPerformed
 
-    private void eastSweet2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastSweet2PropertyChange
-        // TODO add your handling code here:
-        String winner = eastSweet2.getSelectedItem().toString();
-        eastElite1.addItem(winner);
-    }//GEN-LAST:event_eastSweet2PropertyChange
+    private void southSweet2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southSweet2ActionPerformed
+        southElite1.addItem((String)southSweet2.getSelectedItem());
+    }//GEN-LAST:event_southSweet2ActionPerformed
 
-    private void eastSweet3PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastSweet3PropertyChange
-        // TODO add your handling code here:
-        String winner = eastSweet3.getSelectedItem().toString();
-        eastElite2.addItem(winner);
-    }//GEN-LAST:event_eastSweet3PropertyChange
+    private void southSweet3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southSweet3ActionPerformed
+        southElite2.addItem((String)southSweet3.getSelectedItem());
+    }//GEN-LAST:event_southSweet3ActionPerformed
 
-    private void eastSweet4PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_eastSweet4PropertyChange
+    private void southSweet4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southSweet4ActionPerformed
+        southElite2.addItem((String)southSweet4.getSelectedItem());
+    }//GEN-LAST:event_southSweet4ActionPerformed
+
+    private void southElite1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southElite1ActionPerformed
+        southFinal.addItem((String)southElite1.getSelectedItem());
+    }//GEN-LAST:event_southElite1ActionPerformed
+
+    private void southElite2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southElite2ActionPerformed
+        southFinal.addItem((String)southElite2.getSelectedItem());
+    }//GEN-LAST:event_southElite2ActionPerformed
+
+    private void southFinalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_southFinalActionPerformed
+        finalFour1.addItem((String)southFinal.getSelectedItem());
+    }//GEN-LAST:event_southFinalActionPerformed
+
+    private void nameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameFieldActionPerformed
         // TODO add your handling code here:
-        String winner = eastSweet4.getSelectedItem().toString();
-        eastElite2.addItem(winner);
-    }//GEN-LAST:event_eastSweet4PropertyChange
+    }//GEN-LAST:event_nameFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1022,6 +913,7 @@ public class BracketExample extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> midSweet2;
     private javax.swing.JComboBox<String> midSweet3;
     private javax.swing.JComboBox<String> midSweet4;
+    private javax.swing.JTextField nameField;
     private javax.swing.JComboBox<String> southBox1;
     private javax.swing.JComboBox<String> southBox2;
     private javax.swing.JComboBox<String> southBox3;
