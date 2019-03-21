@@ -572,7 +572,6 @@ public class BracketExample extends javax.swing.JFrame {
         getContentPane().add(finalBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 310, 90, 40));
 
         nameField.setEditable(false);
-        nameField.setBackground(new java.awt.Color(240, 240, 240));
         nameField.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         nameField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         nameField.setText("Main Bracket");
@@ -582,7 +581,7 @@ public class BracketExample extends javax.swing.JFrame {
                 nameFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(nameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 30, 160, 40));
+        getContentPane().add(nameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 30, 160, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

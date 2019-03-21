@@ -21,24 +21,28 @@ public class TeamManager {
     private final Team[] teams;                                                 // variable declaration for TeamManager
     private String teamName;
     private String teamMascot;
+    private String teamMascotType;
     private String teamLatitude;
     private String teamLongitude;
     private int teamSeed;
-    private int teamTuition;
-    private int teamSize;
+    private long teamSize;
+    private long teamTuition;                                                   // changed from int to long to account for tuition and size
     private int teamCounter;
+    private int arrayCounter;
     
     public TeamManager() throws IOException                                     // constructor for TeamManager
     {
         teams = new Team[64];
         teamName = "";
         teamMascot = "";
+        teamMascotType = "";
         teamLatitude = "";
         teamLongitude = "";
         teamSeed = 0;
-        teamTuition = 0;
         teamSize = 0;
+        teamTuition = 0;
         teamCounter = 0;
+        arrayCounter = 0;
     }
 //    
 //        public void writeToFile() throws IOException                          // write to file - testing file cretaion
@@ -62,21 +66,23 @@ public class TeamManager {
     {
         Scanner scan = new Scanner(new File("TeamsManager.txt"));
         
-        while(scan.hasNextLine())
+        for (int i = 0; i <= teams.length - 1; i++)
         {
             String input = scan.nextLine();
             String[] data = input.split(",");
             
+//            System.out.println(data.length);                                  // printed the length of the array to test if or where array out of bounds was occuring
             teamName = data[0];
             teamSeed = Integer.parseInt(data[1]);
             teamMascot = data[2];
-            teamTuition = Integer.parseInt(data[3]);
-            teamSize = Integer.parseInt(data[4]);
-            teamLatitude = data[5];
-            teamLongitude = data[6];
-                
-            teams[teamCounter] = new Team(teamName, teamMascot, teamLatitude, teamLongitude, teamSeed, teamTuition, teamSize);
-            teamCounter++;
+            teamMascot = data[3];
+            teamSize = Long.parseLong(data[4]);
+            teamTuition = Long.parseLong(data[5]);
+            teamLatitude = data[6];
+            teamLongitude = data[7];
+            
+            teams[teamCounter] = new Team(teamName, teamMascot, teamMascotType, teamLatitude, teamLongitude, teamSeed, teamTuition, teamSize);
+            teamCounter++; 
         }
     }
     

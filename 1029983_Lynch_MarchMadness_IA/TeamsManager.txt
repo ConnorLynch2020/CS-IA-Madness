@@ -1,66 +1,64 @@
-﻿Virginia,1,Cavaliers,24360,48891,Lat1S,Long1S
-Tennessee,2,Volunteers,28321,31196,Lat2S,Long2S
-Purdue,3,Boilermakers,28804,41573,Lat3S,Long3S
-Kansas State,4,Wildcats,22795,25492,Lat4S,Long4S
-Wisconsin,5,Badgers,43820,36805,Lat5S,Long5S
-Villanova,6,Wildcats,10983,53458,Lat6S,Long6S
-Cincinnati,7,Bearcat,37204,26334,Lat7S,Long7S
-Ole Miss,8,Rebels,23136,23554,Lat8S,Long8S
-Oklahoma,9,Sooners,31626,24443,Lat9S,Long9S
-Iowa,10,Hawkeyes,32166,30609,Lat10S,Long10S
-Saint Mary's,11,Gael,3193,47280,Lat11S,Long11S
-Oregon,12,Ducks,22887,35478,Lat12S,Long12S
-UC Irvine,13,Anteaters,35242,43530,Lat13S,Long13S
-Old Dominion,14,Monarchs,24375,29680,Lat14S,Long14S
-Colgate,15,Raiders,2881,55870,Lat15S,Long15S
-G-Webb,16,Bulldogs,3810,31460,Lat16S,Long16S
-Gonzaga,1,Bulldogs,43210,7506,Lat1W,Long1W
-Michigan,2,Wolverines,46002,49350,Lat2W,Long2W
-Texas Tech,3,Red Raiders,36996,23495,Lat3W,Long3W
-Florida St.,4,Seminoles,41362,21673,Lat4W,Long4W
-Marquette,5,Golden Eagles,11426,41870,Lat5W,Long5W
-Buffalo,6,Bulls,30648,27758,Lat6W,Long6W
-Nevada,7,Wolf Pack,21657,22397,Lat7W,Long7W
-Syracuse,8,Orange,22484,51853,Lat8W,Long8W
-Baylor,9,Bears,17059,45542,Lat9W,Long9W
-Florida,10,Gators,52669,28658,Lat10W,Long10W
-AZ/ST Winner,11,Mascot11W,Size11W,Cost11W,Lat11W,Long11W
-Murray St.,12,Racers,10017,24540,Lat12W,Long12W
-Vermont,13,Catamounts,13340,42516,Lat13W,Long13W
-N. Kentucky,14,Norse,14474,19680,Lat14W,Long14W
-Montana,15,Grizzlies,11865,24959,Lat15W,Long15W
-FDU/PV Winner,16,Mascot16W,Size16W,Cost16W,Lat16W,Long16w
-Duke,1,Blue Devils,16294,55960,36.0°N,78.9°W
-Michigan St.,2,Spartans,50019,39750,Lat2E,Long2E
-LSU,3,Tigers,30861,28627,Lat3E,Long3E
-Va. Tech,4,Hokies,34440,31304,Lat4E,Long4E
-Miss. State,5,Bulldogs,21883,23250,Lat5E,Long5E
-Maryland,6,Terrapins,40521,35216,Lat6E,Long6E
-Louisville,7,Cardinals,21403,26286,Lat7E,Long7E
-VCU,8,Rams,31036,35138,Lat8E,Long8E
-UCF,9,Knights,66183,22467,Lat9E,Long9E
-Minnesota,10,Golden Gophers,51848,30371,Lat10E,Long10E
-BEL/TEM Winner,11,Mascot11E,Size11E,Cost11E,Lat11E,Long11E
-Liberty,12,Flames,75044,25276,Lat12E,Long12E
-Saint Louis,13,Billikens,12098,43996,Lat13E,Long13E
-Yale,14,Bulldogs,12974,53430,Lat14E,Long14E
-Bradley,15,Braves,5844,33760,Lat15E,Long15E
-NCC/NDK Winner,16,Mascot16E,Size16E,Cost16E,Lat16E,Long16E
-N. Carolina,1,Tar Heels,29911,35169,Lat1M,Long1M
-Kentucky,2,Wildcats,29465,29168,Lat2M,Long2M
-Houston,3,Cougars,45364,26340,Lat3M,Long3M
-Kansas,4,Jayhawks,27625,27358,Lat4M,Long4M
-Auburn,5,Tigers,29776,30524,Lat5M,Long5M
-Iowa St.,6,Cyclones,35993,23392,Lat6M,Long6M
-Wofford,7,Terriers,1592,43845,Lat7M,Long7M
-Utah St.,8,Aggies,27679,21505,Lat8M,Long8M
-Washington,9,Huskies,46166,36898,Lat9M,Long9M
-Seton Hall,10,Pirates,9801,42170,Lat10M,Long10M
-Ohio St.,11,Buckeyes,59837,30742,Lat11M,Long11M
-N. Mex. St.,12,Aggies,14432,23508,Lat12M,Long12M
-Northwestern,13,Wildcats,21474,54567,Lat13M,Long13M
-Georgia St.,14,Panthers,32848,29432,Lat14M,Long14M
-Abilene,15,Wildcats,5149,34850,Lat15M,Long15M
-Iona,16,Gaels,3792,38812,Lat16M,Long16M
-
-Duke,1,Blue Devils,55960,6692,36.0°N,78.9°W
+﻿Virginia,1,Cavaliers,Humanoid,24360,48891,38.0336° N,78.5080° W,
+Tennessee,2,Volunteers,Humanoid,28321,31196,35.9544° N,83.9295° W,
+Purdue,3,Boilermakers,Misc,28804,41573,40.4237° N,86.9212° W
+Kansas State,4,Wildcats,Animal,22795,25492,39.1974° N,96.5847° W
+Wisconsin,5,Badgers,Animal,43820,36805,43.0766° N,89.4125° W
+Villanova,6,Wildcats,Animal,10983,53458,40.0371° N,75.3436° W
+Cincinnati,7,Bearcat,Animal,37204,26334,39.1329° N,84.5150° W
+Ole Miss,8,Rebels,Humanoid,23136,23554,34.3647° N,89.5384° W
+Oklahoma,9,Sooners,Humanoid,31626,24443,35.2059° N,97.4457° W
+Iowa,10,Hawkeyes,Animal,32166,30609,41.6611° N,91.5302° W
+Saint Mary's,11,Gael,Humanoid,3193,47280,37.8416° N,122.1099° W
+Oregon,12,Ducks,Animal,22887,35478,44.0448° N,123.0726° W
+UC Irvine,13,Anteaters,Animal,35242,43530,33.6405° N,117.8443° W
+Old Dominion,14,Monarchs,Animal,24375,29680,36.8853° N,76.3059° W
+Colgate,15,Raiders,Humanoid,2881,55870,42.8165° N,75.5394° W
+G-Webb,16,Bulldogs,Animal,3810,31460,35.2475° N,81.6707° W
+Gonzaga,1,Bulldogs,Animal,43210,7506,47.6664° N,117.4015° W
+Michigan,2,Wolverines,Animal,46002,49350,42.2780° N,83.7382° W
+Texas Tech,3,Red Raiders,Humanoid,36996,23495,33.5843° N,101.8783° W
+Florida St.,4,Seminoles,Humanoid,41362,21673,30.4419° N,84.2985° W
+Marquette,5,Golden Eagles,Animal,11426,41870,43.0385° N,87.9304° W
+Buffalo,6,Bulls,Animal,30648,27758,43.0008° N,78.7890° W
+Nevada,7,Wolf Pack,Animal,21657,22397,39.5442° N,119.8164° W
+Syracuse,8,Orange,Misc,22484,51853,43.0392° N,76.1351° W
+Baylor,9,Bears,Animal,17059,45542,31.5497° N,97.1143° W
+Florida,10,Gators,Animal,52669,28658,29.6436° N,82.3549° W
+Arizona St.,11,Sun Devils,Humanoid,51164,28336,33.4242° N, 111.9281° W
+Murray St.,12,Racers,Humanoid,10017,24540,36.6164° N,88.3215° W
+Vermont,13,Catamounts,Animal,13340,42516,44.4779° N,73.1965° W
+N. Kentucky,14,Norse,Humanoid,14474,19680,39.0312° N,84.4625° W
+Montana,15,Grizzlies,Animal,11865,24959,46.8601° N,113.9852° W
+F. Dickinson,16,Knights,Humanoid,11358,41427,40.8975° N, 74.0298° W
+Duke,1,Blue Devils,Humanoid,16294,55960,36.0°N,78.9°W
+Michigan St.,2,Spartans,Humanoid,50019,39750,42.7018° N,84.4822° W
+LSU,3,Tigers,Animal,30861,28627,30.4133° N,91.1800° W
+Va. Tech,4,Hokies,Animal,34440,31304,37.2284° N,80.4234° W
+Miss. State,5,Bulldogs,Animal,21883,23250,33.4555° N,88.7904° W
+Maryland,6,Terrapins,Animal,40521,35216,38.9869° N,76.9426° W
+Louisville,7,Cardinals,Animal,21403,26286,38.2123° N,85.7585° W
+VCU,8,Rams,Animal,31036,35138,37.5495° N,77.4510° W
+UCF,9,Knights,Humanoid,66183,22467,28.6024° N,81.2001° W
+Minnesota,10,Golden Gophers,Animal,51848,30371,44.9740° N,93.2277° W
+Belmont,11,Bruins,Animal,8012,34310,36.1329° N, 86.7941° W
+Liberty,12,Flames,Misc,75044,25276,37.3530° N,79.1770° W
+Saint Louis,13,Billikens,Humanoid,12098,43996,38.6682° N,90.3325° W
+Yale,14,Bulldogs,Animal,12974,53430,41.3163° N,72.9223° W
+Bradley,15,Braves,Humanoid,5844,33760,40.6978° N,89.6153° W
+N. Dak. St.,16,Bison,Animal,14358,15144,46.8962° N, 96.8032° W
+N. Carolina,1,Tar Heels,Animal,29911,35169,35.9049° N,79.0469° W
+Kentucky,2,Wildcats,Animal,29465,29168,38.0307° N,84.5040° W
+Houston,3,Cougars,Animal,45364,26340,29.7199° N,95.3422° W
+Kansas,4,Jayhawks,Animal,27625,27358,38.9543° N,95.2558° W
+Auburn,5,Tigers,Animal,29776,30524,32.5934° N,85.4952° W
+Iowa St.,6,Cyclones,Misc,35993,23392,42.0266° N,93.6465° W
+Wofford,7,Terriers,Animal,1592,43845,34.9581° N,81.9345° W
+Utah St.,8,Aggies,Humanoid,27679,21505,41.7452° N,111.8097° W
+Washington,9,Huskies,Animal,46166,36898,47.6498° N,122.3038° W
+Seton Hall,10,Pirates,Humanoid,9801,42170,40.7426° N,74.2465° W
+Ohio St.,11,Buckeyes,Misc,59837,30742,40.0142° N,83.0309° W
+N. Mex. St.,12,Aggies,Humanoid,14432,23508,32.2788° N,106.7479° W
+Northwestern,13,Wildcats,Animal,21474,54567,42.0451° N,87.6877° W
+Georgia St.,14,Panthers,Animal,32848,29432,33.7531° N,84.3853° W
+Abilene,15,Wildcats,Animal,5149,34850,32.4697° N,99.7081° W
+Iona,16,Gaels,Humanoid,3792,38812,40.9271° N,73.7864° W

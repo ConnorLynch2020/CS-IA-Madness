@@ -13,21 +13,23 @@ public class Team {
     
     String teamName = "";                                                       // variable declaration for the object array
     private String teamMascot = "";
+    private String teamMascotType = "";
     private String teamLatitude = "";
     private String teamLongitude = "";
     private int teamSeed = 0;
-    private int teamTuition = 0;
-    private int teamSize = 0;
+    private long teamSize = 0;
+    private long teamTuition = 0;
                                                                                 // constructor for object array "teams"
-    public Team(String teamName, String teamMascot, String teamLatitude, String teamLongitude, int teamSeed, int teamTuition, int teamSize)
+    public Team(String teamName, String teamMascot, String teamMascotType, String teamLatitude, String teamLongitude, int teamSeed, long teamTuition, long teamSize)
     {
         this.teamName = teamName;
         this.teamMascot = teamMascot;
+        this.teamMascotType = teamMascotType;
         this.teamLatitude = teamLatitude;
         this.teamLongitude = teamLongitude;
         this.teamSeed = teamSeed;
-        this.teamTuition = teamTuition;
         this.teamSize = teamSize;
+        this.teamTuition = teamTuition;
     }
                                                                                 // getters and setters for all variables
     public String getTeamName() {
@@ -44,6 +46,14 @@ public class Team {
 
     public void setTeamMascot(String teamMascot) {
         this.teamMascot = teamMascot;
+    }
+
+    public String getTeamMascotType() {
+        return teamMascotType;
+    }
+
+    public void setTeamMascotType(String teamMascotType) {
+        this.teamMascotType = teamMascotType;
     }
 
     public String getTeamLatitude() {
@@ -70,7 +80,7 @@ public class Team {
         this.teamSeed = teamSeed;
     }
 
-    public int getTeamTuition() {
+    public long getTeamTuition() {
         return teamTuition;
     }
 
@@ -78,7 +88,7 @@ public class Team {
         this.teamTuition = teamTuition;
     }
 
-    public int getTeamSize() {
+    public long getTeamSize() {
         return teamSize;
     }
 
