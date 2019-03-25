@@ -5,6 +5,10 @@
  */
 package MarchMadness;
 
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author 1029983
@@ -28,24 +32,67 @@ public class MainScreen extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        infoButton = new javax.swing.JButton();
+        updateButton = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        titleTextArea = new javax.swing.JTextArea();
 
         jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(950, 800));
+        getContentPane().setLayout(null);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1107, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 783, Short.MAX_VALUE)
-        );
+        infoButton.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        infoButton.setText("March Madness Info");
+        infoButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                infoButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(infoButton);
+        infoButton.setBounds(510, 470, 300, 150);
+
+        updateButton.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        updateButton.setText("Update Bracket");
+        updateButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                updateButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(updateButton);
+        updateButton.setBounds(110, 470, 300, 150);
+
+        titleTextArea.setEditable(false);
+        titleTextArea.setColumns(20);
+        titleTextArea.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        titleTextArea.setRows(5);
+        titleTextArea.setText("       Jesse's\n\n    March Madness\n\n       Program");
+        jScrollPane2.setViewportView(titleTextArea);
+
+        getContentPane().add(jScrollPane2);
+        jScrollPane2.setBounds(310, 160, 286, 171);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void updateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateButtonActionPerformed
+        MasterBracket master = new MasterBracket();
+        
+        MainScreen.this.dispose();
+        new MasterBracket().setVisible(true);
+
+        try {
+            master.setComboBoxes();
+        } catch (IOException ex) {
+            Logger.getLogger(MainScreen.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_updateButtonActionPerformed
+
+    private void infoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_infoButtonActionPerformed
+        MainScreen.this.dispose();
+        new FinalInformation().setVisible(true);
+    }//GEN-LAST:event_infoButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -73,7 +120,7 @@ public class MainScreen extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(MainScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -83,6 +130,10 @@ public class MainScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton infoButton;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea titleTextArea;
+    private javax.swing.JButton updateButton;
     // End of variables declaration//GEN-END:variables
 }

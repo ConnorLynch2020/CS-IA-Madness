@@ -1,5 +1,5 @@
-﻿Virginia,1,Cavaliers,Humanoid,24360,48891,38.0336° N,78.5080° W,
-Tennessee,2,Volunteers,Humanoid,28321,31196,35.9544° N,83.9295° W,
+﻿Virginia,1,Cavaliers,Humanoid,24360,48891,38.0336° N,78.5080° W
+Tennessee,2,Volunteers,Humanoid,28321,31196,35.9544° N,83.9295° W
 Purdue,3,Boilermakers,Misc,28804,41573,40.4237° N,86.9212° W
 Kansas State,4,Wildcats,Animal,22795,25492,39.1974° N,96.5847° W
 Wisconsin,5,Badgers,Animal,43820,36805,43.0766° N,89.4125° W
@@ -14,7 +14,7 @@ UC Irvine,13,Anteaters,Animal,35242,43530,33.6405° N,117.8443° W
 Old Dominion,14,Monarchs,Animal,24375,29680,36.8853° N,76.3059° W
 Colgate,15,Raiders,Humanoid,2881,55870,42.8165° N,75.5394° W
 G-Webb,16,Bulldogs,Animal,3810,31460,35.2475° N,81.6707° W
-Gonzaga,1,Bulldogs,Animal,43210,7506,47.6664° N,117.4015° W
+Gonzaga,1,Bulldogs,Animal,7506,43210,47.6664° N,117.4015° W
 Michigan,2,Wolverines,Animal,46002,49350,42.2780° N,83.7382° W
 Texas Tech,3,Red Raiders,Humanoid,36996,23495,33.5843° N,101.8783° W
 Florida St.,4,Seminoles,Humanoid,41362,21673,30.4419° N,84.2985° W

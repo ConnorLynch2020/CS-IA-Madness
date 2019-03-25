@@ -17,8 +17,8 @@ public class TeamManager {
     
     /**
      * @param args the command line arguments
-     */
-    private final Team[] teams;                                                 // variable declaration for TeamManager
+     */                                                 
+    final Team[] teams;                                                         // variable declaration for TeamManager
     private String teamName;
     private String teamMascot;
     private String teamMascotType;
@@ -28,7 +28,6 @@ public class TeamManager {
     private long teamSize;
     private long teamTuition;                                                   // changed from int to long to account for tuition and size
     private int teamCounter;
-    private int arrayCounter;
     
     public TeamManager() throws IOException                                     // constructor for TeamManager
     {
@@ -42,7 +41,6 @@ public class TeamManager {
         teamSize = 0;
         teamTuition = 0;
         teamCounter = 0;
-        arrayCounter = 0;
     }
 //    
 //        public void writeToFile() throws IOException                          // write to file - testing file cretaion
@@ -66,7 +64,7 @@ public class TeamManager {
     {
         Scanner scan = new Scanner(new File("TeamsManager.txt"));
         
-        for (int i = 0; i <= teams.length - 1; i++)
+        for (int i = 0; i < teams.length; i++)
         {
             String input = scan.nextLine();
             String[] data = input.split(",");
@@ -75,7 +73,7 @@ public class TeamManager {
             teamName = data[0];
             teamSeed = Integer.parseInt(data[1]);
             teamMascot = data[2];
-            teamMascot = data[3];
+            teamMascotType = data[3];
             teamSize = Long.parseLong(data[4]);
             teamTuition = Long.parseLong(data[5]);
             teamLatitude = data[6];
@@ -84,24 +82,44 @@ public class TeamManager {
             teams[teamCounter] = new Team(teamName, teamMascot, teamMascotType, teamLatitude, teamLongitude, teamSeed, teamTuition, teamSize);
             teamCounter++; 
         }
+            String errorFix = teams[0].teamName.substring(1,teams[0].teamName.length());      // fixing weird space error for first teamName String
+            teams[0].setTeamName(errorFix);
     }
     
-//    public void printInformation()                                            // test out file information storage in object array by displaying information in console
+    public void displayMainScreen() throws IOException                          // starts up the main menu to the program
+    {
+        if (teams[0].getTeamName().equals("Virginia"))
+        {
+            new MainScreen().setVisible(true);
+        }
+        else
+        {
+            System.out.println("There is an error with the file information given.");
+        }
+    }
+    
+//    public void printInformation()                                              // test out file information storage in object array by displaying information in console
 //    {
-//        System.out.println(teams[0].getTeamName());
-//        System.out.println(teams[0].getTeamMascot());
-//        System.out.println(teams[0].getTeamLatitude());
-//        System.out.println(teams[0].getTeamLongitude());
-//        System.out.println(teams[0].getTeamSeed());
-//        System.out.println(teams[0].getTeamTuition());
-//        System.out.println(teams[0].getTeamSize());
+//        for (int i = 0; i < teams.length; i++)
+//        {
+//            System.out.println(teams[i].getTeamName());
+//            System.out.println(teams[i].getTeamMascot());
+//            System.out.println(teams[i].getTeamMascotType());
+//            System.out.println(teams[i].getTeamLatitude());
+//            System.out.println(teams[i].getTeamLongitude());
+//            System.out.println(teams[i].getTeamSeed());
+//            System.out.println(teams[i].getTeamTuition());
+//            System.out.println(teams[i].getTeamSize());
+//        }
 //    }
 
     public static void main(String[] args) throws IOException {
         // TODO code application logic here
-        TeamManager app = new TeamManager();
-        app.teamInformation();
-//        app.printInformation();
+        TeamManager manager = new TeamManager();
+        
+        manager.teamInformation();
+        manager.displayMainScreen();
+//        manager.printInformation();
         
         
 //        try {                                                                 // try-catch to write to and create the file (test)
