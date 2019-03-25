@@ -77,21 +77,15 @@ public class MainScreen extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void updateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateButtonActionPerformed
-        MasterBracket master = new MasterBracket();
-        
         MainScreen.this.dispose();
         new MasterBracket().setVisible(true);
-
-        try {
-            master.setComboBoxes();
-        } catch (IOException ex) {
-            Logger.getLogger(MainScreen.class.getName()).log(Level.SEVERE, null, ex);
-        }
     }//GEN-LAST:event_updateButtonActionPerformed
 
     private void infoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_infoButtonActionPerformed
         MainScreen.this.dispose();
-        new FinalInformation().setVisible(true);
+        
+        GameResults results = new GameResults(this, true);
+        results.setVisible(true);
     }//GEN-LAST:event_infoButtonActionPerformed
 
     /**

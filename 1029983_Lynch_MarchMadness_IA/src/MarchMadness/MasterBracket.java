@@ -130,6 +130,8 @@ public class MasterBracket extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        clearButton = new javax.swing.JButton();
+        displayButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -361,9 +363,9 @@ public class MasterBracket extends javax.swing.JFrame {
         nameField.setEditable(false);
         nameField.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         nameField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        nameField.setText("Main Bracket");
+        nameField.setText("Master Bracket");
         nameField.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        getContentPane().add(nameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 30, 160, 40));
+        getContentPane().add(nameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 20, -1, -1));
         getContentPane().add(southSweetField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 70, 80, 28));
         getContentPane().add(southSweetField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 150, 80, 28));
         getContentPane().add(southSweetField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 230, 80, 28));
@@ -433,6 +435,24 @@ public class MasterBracket extends javax.swing.JFrame {
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("West");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 565, 70, 20));
+
+        clearButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        clearButton.setText("Clear");
+        clearButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                clearButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(clearButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 70, 100, 50));
+
+        displayButton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        displayButton.setText("Display");
+        displayButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                displayButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(displayButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 70, 100, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -589,7 +609,7 @@ public class MasterBracket extends javax.swing.JFrame {
         west32Winners[4] = (String)westBox5.getSelectedItem();
         west32Winners[5] = (String)westBox6.getSelectedItem();
         west32Winners[6] = (String)westBox7.getSelectedItem();
-        west32Winners[7] = (String)westBox7.getSelectedItem();
+        west32Winners[7] = (String)westBox8.getSelectedItem();
         east32Winners[0] = (String)eastBox1.getSelectedItem();
         east32Winners[1] = (String)eastBox2.getSelectedItem();
         east32Winners[2] = (String)eastBox3.getSelectedItem();
@@ -680,7 +700,7 @@ public class MasterBracket extends javax.swing.JFrame {
     {
         southElite[0] = southEliteField1.getText();
         southElite[1] = southEliteField2.getText();
-        southElite[0] = westEliteField1.getText();
+        westElite[0] = westEliteField1.getText();
         westElite[1] = westEliteField2.getText();
         eastElite[0] = eastEliteField1.getText();
         eastElite[1] = eastEliteField2.getText();
@@ -716,8 +736,8 @@ public class MasterBracket extends javax.swing.JFrame {
     private void getFinalFour()
     {
         southFinal = southFinal4Field.getText();
-        eastFinal = eastFinal4Field.getText();
         westFinal = westFinal4Field.getText();
+        eastFinal = eastFinal4Field.getText();
         midFinal = midFinal4Field.getText();
     }
     
@@ -726,8 +746,8 @@ public class MasterBracket extends javax.swing.JFrame {
         PrintWriter writer = new PrintWriter(new File("FinalFour.txt"));
         
         writer.println(southFinal);
-        writer.println(eastFinal);
         writer.println(westFinal);
+        writer.println(eastFinal);
         writer.println(midFinal);
         writer.flush();
         writer.close();
@@ -838,14 +858,66 @@ public class MasterBracket extends javax.swing.JFrame {
 
     }//GEN-LAST:event_lockButtonActionPerformed
 
+    private void clearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearButtonActionPerformed
+        try {
+            PrintWriter writer = new PrintWriter(new File("Round32Winners.txt"));
+        }
+        catch (FileNotFoundException ex) {
+            Logger.getLogger(MasterBracket.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        try {
+            PrintWriter writer2 = new PrintWriter(new File("SweetSixteen.txt"));
+        }
+        catch (FileNotFoundException ex) {
+            Logger.getLogger(MasterBracket.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        try {
+            PrintWriter writer3 = new PrintWriter(new File("EliteEight.txt"));
+        }
+        catch (FileNotFoundException ex) {
+            Logger.getLogger(MasterBracket.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        try {
+            PrintWriter writer4 = new PrintWriter(new File("FinalFour.txt"));
+        }
+        catch (FileNotFoundException ex) {
+            Logger.getLogger(MasterBracket.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        try {
+            PrintWriter writer5 = new PrintWriter(new File("FinalTwo.txt"));
+        }
+        catch (FileNotFoundException ex) {
+            Logger.getLogger(MasterBracket.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        try {
+            PrintWriter writer6 = new PrintWriter(new File("Champion.txt"));
+        }
+        catch (FileNotFoundException ex) {
+            Logger.getLogger(MasterBracket.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_clearButtonActionPerformed
+
+    private void displayButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_displayButtonActionPerformed
+        try {
+            setComboBoxes();
+        }
+        catch (IOException ex) {
+            Logger.getLogger(MasterBracket.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_displayButtonActionPerformed
+
     public void setComboBoxes() throws IOException                              // sets all the combo boxes with team names from TeamManager
     {
         TeamManager manager = new TeamManager();
-        
-        System.out.println("monkey");
-        System.out.println(manager.teams[0].getTeamName());
+
+        manager.teamInformation();
         
         Scanner round = new Scanner(new File("Round32Winners.txt"));
+        Scanner sweet = new Scanner(new File("SweetSixteen.txt"));
+        Scanner elite = new Scanner(new File("EliteEight.txt"));
+        Scanner four = new Scanner(new File("FinalFour.txt"));
+        Scanner two = new Scanner(new File("FinalTwo.txt"));
+        Scanner champion = new Scanner(new File("Champion.txt"));         
         
         if (!round.hasNextLine())
         {
@@ -914,6 +986,93 @@ public class MasterBracket extends javax.swing.JFrame {
             midBox8.addItem(manager.teams[49].getTeamName());
             midBox8.addItem(manager.teams[62].getTeamName());
         }
+        
+        if (round.hasNextLine())
+        {
+            southBox1.addItem(round.nextLine());
+            southBox2.addItem(round.nextLine());
+            southBox3.addItem(round.nextLine());
+            southBox4.addItem(round.nextLine());
+            southBox5.addItem(round.nextLine());
+            southBox6.addItem(round.nextLine());
+            southBox7.addItem(round.nextLine());
+            southBox8.addItem(round.nextLine());
+            westBox1.addItem(round.nextLine());
+            westBox2.addItem(round.nextLine());
+            westBox3.addItem(round.nextLine());
+            westBox4.addItem(round.nextLine());
+            westBox5.addItem(round.nextLine());
+            westBox6.addItem(round.nextLine());
+            westBox7.addItem(round.nextLine());
+            westBox8.addItem(round.nextLine());
+            eastBox1.addItem(round.nextLine());
+            eastBox2.addItem(round.nextLine());
+            eastBox3.addItem(round.nextLine());
+            eastBox4.addItem(round.nextLine());
+            eastBox5.addItem(round.nextLine());
+            eastBox6.addItem(round.nextLine());
+            eastBox7.addItem(round.nextLine());
+            eastBox8.addItem(round.nextLine());
+            midBox1.addItem(round.nextLine());
+            midBox2.addItem(round.nextLine());
+            midBox3.addItem(round.nextLine());
+            midBox4.addItem(round.nextLine());
+            midBox5.addItem(round.nextLine());
+            midBox6.addItem(round.nextLine());
+            midBox7.addItem(round.nextLine());
+            midBox8.addItem(round.nextLine());
+        }
+        
+        if (sweet.hasNextLine())
+        {
+            southSweetField1.setText(sweet.nextLine());
+            southSweetField2.setText(sweet.nextLine());
+            southSweetField3.setText(sweet.nextLine());
+            southSweetField4.setText(sweet.nextLine());
+            westSweetField1.setText(sweet.nextLine());
+            westSweetField2.setText(sweet.nextLine());
+            westSweetField3.setText(sweet.nextLine());
+            westSweetField4.setText(sweet.nextLine());
+            eastSweetField1.setText(sweet.nextLine());
+            eastSweetField2.setText(sweet.nextLine());
+            eastSweetField3.setText(sweet.nextLine());
+            eastSweetField4.setText(sweet.nextLine());
+            midSweetField1.setText(sweet.nextLine());
+            midSweetField2.setText(sweet.nextLine());
+            midSweetField3.setText(sweet.nextLine());
+            midSweetField4.setText(sweet.nextLine());
+        }
+        
+        if (elite.hasNextLine())
+        {
+            southEliteField1.setText(elite.nextLine());
+            southEliteField2.setText(elite.nextLine());
+            westEliteField1.setText(elite.nextLine());
+            westEliteField2.setText(elite.nextLine());
+            eastEliteField1.setText(elite.nextLine());
+            eastEliteField2.setText(elite.nextLine());
+            midEliteField1.setText(elite.nextLine());
+            midEliteField2.setText(elite.nextLine());
+        }
+        
+        if (four.hasNextLine())
+        {
+            southFinal4Field.setText(four.nextLine());
+            westFinal4Field.setText(four.nextLine());
+            eastFinal4Field.setText(four.nextLine());
+            midFinal4Field.setText(four.nextLine());
+        }
+        
+        if (two.hasNextLine())
+        {
+            leftFinalField.setText(two.nextLine());
+            rightFinalField.setText(two.nextLine());
+        }
+        
+        if (champion.hasNextLine())
+        {
+            championField.setText(champion.nextLine());
+        }
     }
     
     /**
@@ -950,6 +1109,8 @@ public class MasterBracket extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField championField;
+    private javax.swing.JButton clearButton;
+    private javax.swing.JButton displayButton;
     private javax.swing.JComboBox<String> eastBox1;
     private javax.swing.JComboBox<String> eastBox2;
     private javax.swing.JComboBox<String> eastBox3;
